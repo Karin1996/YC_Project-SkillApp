@@ -1,0 +1,15 @@
+.sign-up-frame {
+    width: 30%;
+    margin: auto;
+    border: 2px solid black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.signuptextbox {
+    margin: 5px;
+}
+
+.signupbutton {
+    margin-top: 10px;
+}
