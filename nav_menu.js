@@ -1,5 +1,5 @@
 
-let nav = ` 
+let nav_menu = ` 
 <nav>
     <div id="hamburger">X</div>
 
@@ -18,4 +18,4 @@ let nav = `
 `;
 
 // insert nav in body
-document.body.insertAdjacentHTML("afterbegin", nav);
+document.body.insertAdjacentHTML("afterbegin", nav_menu);
