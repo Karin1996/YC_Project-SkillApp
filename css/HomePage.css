@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 1rem;
+}
+
+.welcome img {
+    width: 200px;
+    margin: 50px;
+}
+
+.front-page {
+    height: 100vh;
+    height: 100vh;
+    background-color: #ff7141;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    background-color: #0460ff;
+    border: none;
+    padding: 8px;
+    font-size: 1.5rem;
+    margin: 0 100px;
+    border-radius: 5%;
+    color: #333;
+}
