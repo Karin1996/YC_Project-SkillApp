@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a05f2ce7-e99f-4629-a445-4beb94acdd74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/YC_Project-SkillApp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SkillAppLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomePage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/HomePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontend-react-tandartspraktijk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -65,7 +59,10 @@
       <option name="presentableId" value="Default" />
       <updated>1663661728404</updated>
       <workItem from="1663661729680" duration="5112000" />
-      <workItem from="1663678443976" duration="615000" />
+      <workItem from="1663678443976" duration="1919000" />
+      <workItem from="1663869923087" duration="17000" />
+      <workItem from="1663921734830" duration="3065000" />
+      <workItem from="1664174182980" duration="419000" />
     </task>
     <servers />
   </component>
