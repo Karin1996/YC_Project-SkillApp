@@ -1,0 +1,18 @@
+body {
+    size: 25px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1{
+    font-size: 4em; /*em means * times the inherited value*/
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+    margin: 15px;
+}
+
+h2{
+    font-size: 2em;
+}
