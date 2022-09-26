@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="css/signup.css">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+    <script type="text/javascript" src="./js/signup.js"></script>
     <title>Title</title>
 </head>
 <body>
@@ -12,13 +13,13 @@
 
     <form>
         <input id="mail" class="signuptextbox" placeholder="E-Mail Address"> <br>
+        <input id="name" class="signuptextbox topbox" placeholder="Name"> <br>
         <input id="username" class="signuptextbox topbox" placeholder="Username"> <br>
         <input id="password" class="signuptextbox" placeholder="Password" type="password"> <br>
         <input id="passwordconfirm" class="signuptextbox" placeholder="Confirm Password" type="password"> <br>
-        <input class="signupbutton" type="submit" value="Sign Up"> <!-- deze gaat op een gegeven moment wel naar de backend toe of zo -->
+        <input onclick="generateJSON()" class="signupbutton" type="submit" value="Sign Up">
     </form>
 </div>
-
 
 </body>
 </html>
