@@ -6,17 +6,39 @@
     <title>Skill App</title>
 </head>
 <body>
-<section class="front-page">
-    <div class="welcome">
-        <h2>Welcome to</h2>
-        <h1>Skill App</h1>
-        <img src="../Java/Assets/SkillAppLogo.png" alt="Skill App Logo">
-    </div>
-    <div class="fp-buttons">
-        <button>Sign in</button>
-        <button>Create Account</button>
+<section class="showcase">
+    <header>
+        <a href="http://localhost:63343/YC_Project-SkillApp/index.html?_ijt=t7us6192cuuh7aicuvj9ru7upq&_ij_reload=RELOAD_ON_SAVE"><h2 class="logo">Skill App</h2></a>
+        <div class="toggle"></div>
+    </header>
+    <video src="./Assets/production%20ID_4088836.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+        <h2>Never Stop To </h2>
+        <h3>Emprove Your Skills</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+        <a href="./signup.html">Sign up</a>
     </div>
 </section>
+<div class="menu">
+    <ul>
+        <li><a href="./signin.html">Sign in</a></li>
+        <li><a href="#">Expert</a></li>
+        <li><a href="#">Libary</a></li>
+    </ul>
+</div>
 
+<script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+    })
+</script>
 </body>
 </html>
