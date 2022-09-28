@@ -1,0 +1,58 @@
+/*General CSS styling*/
+
+body{
+    background-color: red;
+    background: linear-gradient(138deg, rgba(209,158,230,1) 15%, rgba(87,162,208,1) 45%, rgba(78,170,188,1) 72%, rgb(87, 109, 207) 100%);
+
+    
+}
+
+.login_register {
+    background-color: white;
+    border-radius: 4px;
+    padding: 3rem 4rem;
+    box-shadow: 0px 6px 20px rgb(28, 60, 117);
+    width: 480px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+input{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+span{
+    display: inline-block;
+    margin-top: 2rem;
+    color: rgb(122, 122, 122);
+    font-size: 0.9rem;
+}
+
+.button{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #802ba7;
+    line-height: 2rem;
+}
+
+#expert {
+    width: auto;
+    line-height: 1rem;
+    cursor: pointer;
+}
+label {
+    display: inline-block;
+    width: 90%;
+    margin-left: 1rem;
+    line-height: 1rem;
+    cursor: pointer;
+}
