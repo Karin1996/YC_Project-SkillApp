@@ -1,0 +1,53 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.index-divider {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.half {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.water1 {
+    background-image: url("water1.jpg");
+    background-size: cover;
+    opacity: 80%;
+}
+
+.water2 {
+    background-image: url("water2.jpg");
+    background-size: cover;
+    opacity: 80%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content h1 {
+    color: white;
+    font-size: 6rem;
+    margin: 40px;
+}
+
+.content button {
+    background-color: white;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
