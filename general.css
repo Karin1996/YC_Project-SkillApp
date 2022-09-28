@@ -1,0 +1,94 @@
+/*GENERAL CSS*/
+@font-face {
+    font-family: "interLight";
+    src: url("fonts/Inter/Inter-Light.ttf");
+}
+@font-face {
+    font-family: "interRegular";
+    src: url("fonts/Inter/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: "interBold";
+    src: url("fonts/Inter/Inter-SemiBold.ttf");
+}
+
+html{
+    font-size: 100%;
+    font-family: "interRegular", "Helvetica", sans-serif;
+    -webkit-box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(28, 60, 117);
+}
+p, label{
+    color:rgb(12, 29, 58);
+}
+input{
+    font-family: "interLight";
+    font-size: 1rem;
+    line-height: 2rem;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    color:rgb(12, 29, 58)
+}
+input:focus{
+    outline: 1px dashed #ccc;
+    border-bottom: 2px solid rgb(122, 122, 122);
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+/*GENERAL CSS CLASSES*/
+
+/*buttons*/
+/*default button*/
+.button {
+    width: auto;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-family: "interBold", sans-serif;
+    font-size: 1rem;
+    background-color: transparent;
+    border-bottom: 0;
+    border: 3px solid rgb(28, 60, 117);
+    color: rgb(28, 60, 117);
+    border-radius: 4px;
+    transition: 300ms;
+}
+.button:hover {
+    background-color: rgb(28, 60, 117);
+    color: white;
+    transition: 300ms;
+    cursor: pointer;
+}
+/*red button*/
+.red_button {
+    color: white;
+    border: 3px solid rgb(173, 39, 79);
+    background-color: rgb(173, 39, 79);
+}
+.red_button:hover{
+    border: 3px solid rgb(117, 20, 44);
+    background-color: rgb(117, 20, 44);
+}
+/*-------------------------------------------------------------------------------------------------*/
+
+/*Flex elements*/
+/*All elements in parent will be in the center center*/
+.flex_middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*-------------------------------------------------------------------------------------------------*/
