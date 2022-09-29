@@ -23,6 +23,23 @@ body::before{
     padding: 3rem 4rem;
     width: 480px;
 }
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem 5rem;;
+}
+header h1{
+        text-transform: uppercase;
+        font-family: "poppinsSemibold", sans-serif;
+        font-size: 1.4rem;
+        color: white;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+
 h1{
     text-align: center;
     margin-bottom: 2rem;

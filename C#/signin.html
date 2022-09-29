@@ -13,17 +13,17 @@
     <div class="login_register">
         <h1>Login</h1>
 
-        <form>
+        <form action="#">
             <input id="username"  placeholder="Username">
             <input id="password" placeholder="Password" type="password">
 
             <span id="message">Place message here. eg "user doesn't exist"</span>
 
-            <input class="button" type="submit" value="Login">
+            <input class="button" type="submit" value="Login" onclick="requestLogin()">
             <a href="#">Forgot password?</a>
             <a href="signup.html">I don't have an account</a>
         </form>
     </div>
-
+    <script src="js/login.js"></script>
 </body>
 </html>

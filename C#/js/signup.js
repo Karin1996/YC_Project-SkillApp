@@ -11,26 +11,27 @@ function generateJSON(){
     //check if passwords are the same
     if(checkPasswordMatch(inputPassword, verifyPassword)){
 
-    //turn the values into an object
-    inlogObj.name = inputName;
-    inlogObj.username = inputUserName;
-    inlogObj.email = emailInput;
-    inlogObj.password = inputPassword;
-    inlogObj.points = 1;
-    inlogObj.goalProgress = 1;
-    inlogObj.subGoalProgess = 1;
-    inlogObj.Expert = false;
+        //turn the values into an object
+        inlogObj.name = inputName;
+        inlogObj.username = inputUserName;
+        inlogObj.email = emailInput;
+        inlogObj.password = inputPassword;
+        inlogObj.points = 1;
+        inlogObj.goalProgress = 1;
+        inlogObj.subGoalProgess = 1;
+        inlogObj.Expert = false;
 
-    //convert the object into a JSON file
-    const inlogJSON = JSON.stringify(inlogObj);
-    console.log(inlogJSON);
-    serverRequest(inlogJSON)
+        //convert the object into a JSON file
+        const inlogJSON = JSON.stringify(inlogObj);
+        console.log(inlogJSON);
+
+        //serverRequest(inlogJSON);
     }
 
 }
 
 function serverRequest(json){
-    fetch("http://localhost:8082/users", { headers: {
+    fetch("http://localhost:8082/users/", { headers: {
       'Content-Type': 'application/json'}, method: 'POST', body: json})
     .then(resp => resp.json())
     .then(console.log);

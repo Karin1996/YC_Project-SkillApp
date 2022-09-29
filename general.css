@@ -59,6 +59,9 @@ input:focus{
 input[type="checkbox"]{
     accent-color: #41666D;
 }
+input::placeholder {
+    color:rgb(231, 231, 231);
+}
 /*-------------------------------------------------------------------------------------------------*/
 
 /*GENERAL CSS CLASSES*/
