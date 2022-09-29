@@ -16,7 +16,7 @@ function requestLogin(){
 }
 
 function serverRequest(json){
-    fetch("https://localhost:7298/api/user/login", {
+    fetch("https://localhost:7298/api/User/user/login", {
         method: "POST",
         headers: {
             "Accept": "application/json",
@@ -25,5 +25,6 @@ function serverRequest(json){
         body: json
     })
     .then(response => response.json())
-    .then(console.log);
+    .then(response => {if(response) {window.location.href = "desktop.html";} else {alert("Login failed")}})
+    .then(console.log)
 }
