@@ -1,20 +1,24 @@
 /*GENERAL CSS*/
 @font-face {
-    font-family: "interLight";
-    src: url("fonts/Inter/Inter-Light.ttf");
+    font-family: "poppinsLight";
+    src: url("fonts/poppins/Poppins-Light.ttf");
 }
 @font-face {
-    font-family: "interRegular";
-    src: url("fonts/Inter/Inter-Regular.ttf");
+    font-family: "poppinsRegular";
+    src: url("fonts/poppins/Poppins-Regular.ttf");
 }
 @font-face {
-    font-family: "interBold";
-    src: url("fonts/Inter/Inter-SemiBold.ttf");
+    font-family: "poppinsSemibold";
+    src: url("fonts/poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+    font-family: "poppinsBold";
+    src: url("fonts/poppins/Poppins-Bold.ttf");
 }
 
 html{
     font-size: 100%;
-    font-family: "interRegular", "Helvetica", sans-serif;
+    font-family: "poppinsRegular", "Helvetica", sans-serif;
     -webkit-box-sizing: padding-box;
     -moz-box-sizing: padding-box;
     box-sizing: border-box;
@@ -29,22 +33,31 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: rgb(28, 60, 117);
+    color: white;
+    text-shadow: 2px 2px 2px #1e2930;
 }
 p, label{
-    color:rgb(12, 29, 58);
+    color:rgb(231, 231, 231);
+    text-shadow: 2px 2px 2px #1e2930;
 }
 input{
-    font-family: "interLight";
     font-size: 1rem;
+    font-family: "poppinsRegular", sans-serif;
     line-height: 2rem;
     border: 0;
-    border-bottom: 2px solid #ccc;
-    color:rgb(12, 29, 58)
+    border-bottom: 2px solid rgb(231, 231, 231);
+    color: white;
+    background-color: transparent;
+    transition: 300ms;
 }
 input:focus{
-    outline: 1px dashed #ccc;
-    border-bottom: 2px solid rgb(122, 122, 122);
+    outline: 1px dashed rgb(231, 231, 231);
+    border-bottom: 2px solid white;
+    color: white;
+    transition: 300ms;
+}
+input[type="checkbox"]{
+    accent-color: #41666D;
 }
 /*-------------------------------------------------------------------------------------------------*/
 
@@ -54,21 +67,22 @@ input:focus{
 /*default button*/
 .button {
     width: auto;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.2rem;
     text-transform: uppercase;
-    font-family: "interBold", sans-serif;
     font-size: 1rem;
     background-color: transparent;
     border-bottom: 0;
-    border: 3px solid rgb(28, 60, 117);
-    color: rgb(28, 60, 117);
-    border-radius: 4px;
-    transition: 300ms;
+    border-radius: 2px;
+    display: inline-block;
+    transition: 200ms;
+
+    border: 3px solid white;
+    background-color: white;
+    color: #41666D;
 }
 .button:hover {
-    background-color: rgb(28, 60, 117);
-    color: white;
-    transition: 300ms;
+    letter-spacing: 0.2rem;
+    transition: 200ms;
     cursor: pointer;
 }
 /*red button*/
