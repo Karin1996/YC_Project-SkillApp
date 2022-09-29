@@ -23,22 +23,24 @@ function menuOpen(open){
     //if the menu is already open, close it
     if(open){
         nav.classList.remove("open");
+        document.getElementById("hamburger").style.backgroundImage = "url('assets/hamburger.png')";
         nav.style.width = closedWidth;
         main.style.width = 100% - closedWidth;
 
         for(let i=0; i < spans.length; i++){
-           spans[i].style.visibility = "hidden";
+           spans[i].style.display = "none";
         }
     }
     //menu is closed, open it
     else{
         //add open class
         nav.classList.add("open");
+        document.getElementById("hamburger").style.backgroundImage = "url('assets/close.png')";
         nav.style.width = openWidth + "px";
         main.style.width = 100% - (openWidth + "px");
 
         for(let i=0; i < spans.length; i++){
-            spans[i].style.visibility = "visible";
+            spans[i].style.display = "inline-block";
         }
     }
 }

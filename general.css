@@ -81,10 +81,11 @@ input::placeholder {
 
     border: 3px solid white;
     background-color: white;
-    color: #41666D;
+    color: #41666D !important;
 }
 .button:hover {
     letter-spacing: 0.2rem;
+    color: #41666D !important;
     transition: 200ms;
     cursor: pointer;
 }

@@ -1,18 +1,15 @@
 
 let nav_menu = ` 
 <nav>
-    <div id="hamburger">X</div>
+    <div id="hamburger"></div>
 
     <menu>
-        <li><a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>Lorem</span> </a></li>
-        <li><a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>Lorem</span> </a></li>
-        <li><a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>Lorem</span> </a></li>
-        <li><a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>Lorem</span> </a></li>
+        <li><a href="desktop.html"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span> My Dashboard </span> </a></li>
+        <li><a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span> Search Goals </span> </a></li>
     </menu>
     
-    <div>
-        <a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>settings</span>  </a>
-        <a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>logout</span>  </a>
+    <div id="logout_div">
+        <a href="homepage.html"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span> Logout</span>  </a>
     </div>
 </nav>
 `;

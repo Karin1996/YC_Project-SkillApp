@@ -2,8 +2,7 @@ function requestLogin(){
     //Get the name and password from the input fields
     let inputUserName = document.getElementById("username").value;
     let inputPassword = document.getElementById("password").value;
-
-    
+ 
     //turn the values into an object
     let inlogObj = {
         username: inputUserName,

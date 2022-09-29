@@ -1,19 +1,4 @@
 /*General CSS styling*/
-
-body{
-    background-image: url("../assets/water2.jpg");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
-}
-body::before{
-    content: " ";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(18, 65, 73, 0.5);
-}
-
 .login_register {
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
