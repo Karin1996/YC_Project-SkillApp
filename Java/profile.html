@@ -5,35 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Java/css/nav.css">
-    <link rel="stylesheet" href="../Java/css/loggedinHome.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" type="text/css" href="../general.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
     <!--Nav menu javascript, open and close menu -->
     <script src="../Java/js/nav.js" defer></script>
+    <script type="text/javascript" src="../Java/js/profile.js"></script>
     
-    <title>Document</title>
+    <title>Profile</title>
 </head>
 <body>
     <!--Nav menu-->
     <script src="nav_menu.js"></script>
-   
+    <button onclick="getUser()">get user data</button>
+    <button onclick="getGoals()">get goals</button>
 
     <!--Main content of logged in pages in here-->
     <main>
-        <h2>Welcome back <br>[username]!</h1>
+        <h1>Welcome back</h1>
+        <h1 id="username"></h1>
         <img class="icon" src="../Java/Assets/default_image.png" alt="default_image">
 
         <div id="user_active_goals">
-            <!--Replace with data from db-->
             <div>
                 <img class="icon" src="../Java/Assets/default_image.png" alt="default_image">
-                <a href="#">[active goal1]</a>
-            </div>
-            <div>
-                <img class="icon" src="../Java/Assets/default_image.png" alt="default_image">
-                <a href="#">[active goal2]</a>
-            </div>
-            <div>
-                <img class="icon" src="../Java/Assets/default_image.png" alt="default_image">
-                <a href="#">[active goal3]</a>
+                <h2 id="goal">hoi</h2>
             </div>
         </div>
     </main>

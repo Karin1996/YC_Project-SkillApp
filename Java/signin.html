@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="../Java/css/signin.css">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../general.css">
+    <link rel="stylesheet" type="text/css" href="css/signin_signup.css">
+    <title>Login</title>
 </head>
-<body>
+<body class="flex_middle">
 
-<div class="sign-in-frame">
-    <h1> Sign In </h1>
+<div class="login_register">
+    <h1>Login</h1>
 
     <form>
-        <input id="username" class="signintextbox topbox" placeholder="Username"> <br>
-        <input id="password" class="signintextbox" placeholder="Password" type="password"> <br>
-        <input class="sign-in-button" type="submit" value="Sign in"> <!-- deze gaat op een gegeven moment wel naar de backend toe of zo -->
-    </form>
-    <a href="?okcool">Reset password</a>
-    <br><br>
-    <form action="signup.html">
-        <input class="register-button" type="submit" value="Not yet registered? Do so here!">
-    </form>
+        <input id="username"  placeholder="Username">
+        <input id="password" placeholder="Password" type="password">
 
+        <span id="message">Place message here. eg "user doesn't exist"</span>
+
+        <input class="button" type="submit" value="Login">
+        <a href="#">Forgot password?</a>
+        <a href="signup.html">I don't have an account</a>
+    </form>
 </div>
+
 </body>
 </html>
