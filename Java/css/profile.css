@@ -1,0 +1,41 @@
+/*Main content css*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h2{
+    padding: 3rem;
+    text-align: center;
+    color: black;
+}
+main img.icon{
+    width: 5rem;
+    margin: 20px;
+}
+h3{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+main div#user_active_goals{
+    position: relative;
+    width: auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 6px 20px rgba(18, 65, 73, 0.5);
+    border-radius: 4px;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+}
+main div#user_active_goals div{
+    box-sizing: border-box;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
