@@ -1,5 +1,5 @@
 
-let nav_menu = ` 
+let nav_menu = `
 <nav>
     <div id="hamburger"></div>
 
