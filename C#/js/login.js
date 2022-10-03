@@ -1,3 +1,5 @@
+document.getElementById("loginButton").addEventListener("click", requestLogin);
+
 function requestLogin(){
     //Get the name and password from the input fields
     let inputUserName = document.getElementById("username").value;
@@ -9,13 +11,15 @@ function requestLogin(){
         password: inputPassword
     };
 
+    console.log("url is", urlVar);
+
     //convert the object into a JSON file
     const inlogJSON = JSON.stringify(inlogObj);
     serverRequest(inlogJSON);
 }
 
 function serverRequest(json){
-    fetch("https://localhost:7298/api/User/user/login", {
+    fetch(urlVar,"/api/User/user/login", {
         method: "POST",
         headers: {
             "Accept": "application/json",
@@ -24,6 +28,9 @@ function serverRequest(json){
         body: json
     })
     .then(response => response.json())
-    .then(response => {if(response) {window.location.href = "desktop.html";} else {alert("Login failed")}})
+    .then(response => {
+        if(response) {window.location.href = "desktop.html";} 
+        else {document.getElementById("password").innerText = "Login failed"}
+    })
     .then(console.log)
 }
