@@ -11,15 +11,13 @@ function requestLogin(){
         password: inputPassword
     };
 
-    console.log("url is", urlVar);
-
     //convert the object into a JSON file
     const inlogJSON = JSON.stringify(inlogObj);
     serverRequest(inlogJSON);
 }
 
 function serverRequest(json){
-    fetch(urlVar,"/api/User/user/login", {
+    fetch(urlVar+"/api/User/user/login", {
         method: "POST",
         headers: {
             "Accept": "application/json",
@@ -27,10 +25,17 @@ function serverRequest(json){
         },
         body: json
     })
-    .then(response => response.json())
     .then(response => {
-        if(response) {window.location.href = "desktop.html";} 
-        else {document.getElementById("password").innerText = "Login failed"}
+        if(response.status == 200){
+            //Will have a "set-cookie in the response header"
+            //Redirect to the desktop/dashboard (with correct user)
+            //window.location.href = "desktop.html";
+
+            
+        }
+        else{
+            document.getElementById("message").innerText = "Login failed";
+        }
     })
-    .then(console.log)
+    .catch(document.getElementById("message").innerText = "Something went wrong, try again later")
 }
