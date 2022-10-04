@@ -29,7 +29,6 @@ function generateJSON(){
 
 }
 
-
 function serverRequest(json){
     console.log("Wowzerts");
     fetch("http://localhost:8082/users", { headers: {
@@ -39,7 +38,6 @@ function serverRequest(json){
         .then((data) => console.log(data));
 
 }
-
 
 function checkPasswordMatch(passwordOne, passwordTwo){
     if(passwordOne === passwordTwo){
