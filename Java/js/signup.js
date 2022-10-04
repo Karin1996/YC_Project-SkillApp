@@ -33,16 +33,11 @@ function generateJSON(){
 function serverRequest(json){
     console.log("Wowzerts");
     fetch("http://localhost:8082/users", { headers: {
-<<<<<<< HEAD
-      'Content-Type': 'application/json'}, method: 'POST', body: json})
-      .then((response) => response.json())
-      .then((data) => console.log(data));
-      console.log(data);
-=======
+
             'Content-Type': 'application/json'}, method: 'POST', body: json})
         .then((response) => response.json())
         .then((data) => console.log(data));
->>>>>>> main
+
 }
 
 
