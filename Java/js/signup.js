@@ -23,11 +23,12 @@ function generateJSON(){
 
     //convert the object into a JSON file
     const signUpJSON = JSON.stringify(signUpObj);
-    // console.log(signUpJSON);
+    console.log("array met input user " + signUpJSON);
     serverRequest(signUpJSON);
     }
 
 }
+
 
 function serverRequest(json){
     fetch("http://localhost:8082/users", { headers: {
