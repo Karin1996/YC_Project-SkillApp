@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a05f2ce7-e99f-4629-a445-4beb94acdd74" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Java/Assets/water1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/css/signin_signup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/js/signin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/C#/desktop.html" beforeDir="false" afterPath="$PROJECT_DIR$/C#/desktop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/Assets/SkillAppLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/HomePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/chooseCategory.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/css/chooseCategory.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/css/global.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/css/loggedinHome.css" beforeDir="false" afterPath="$PROJECT_DIR$/Java/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/css/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/Java/css/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/css/newUser.css" beforeDir="false" afterPath="$PROJECT_DIR$/Java/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/css/signin.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/css/signup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/js/replacewithjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C#/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/C#/signin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/signin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/js/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/signup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/loggedinHome.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/signup.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +78,11 @@
       <workItem from="1664347348821" duration="754000" />
       <workItem from="1664358740276" duration="7724000" />
       <workItem from="1664431184379" duration="1087000" />
-      <workItem from="1664517822338" duration="1944000" />
+      <workItem from="1664517822338" duration="3700000" />
+      <workItem from="1664626105925" duration="407000" />
+      <workItem from="1664626929176" duration="1275000" />
+      <workItem from="1664779171699" duration="6369000" />
+      <workItem from="1664866687086" duration="803000" />
     </task>
     <servers />
   </component>
