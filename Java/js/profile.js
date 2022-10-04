@@ -4,7 +4,7 @@ function getUser() {
             console.log(data);
             return data.json();
         }).then((userdata)=>{
-             console.log(userdata.name);
+             console.log(userdata.id);
              document.getElementById('username')
                  .innerHTML=userdata.name;
     }).catch((err)=>{

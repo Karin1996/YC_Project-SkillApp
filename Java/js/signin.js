@@ -1,16 +1,15 @@
-function login(){
-    console.log("hallo");
-    let signInObj = {};
-
+function getUser() {
     let inputUserName = document.getElementById("username").value;
-    let inputPassword = document.getElementById("password").value;
+    console.log(inputUserName)
 
-    signInObj.username = inputUserName;
-    signInObj.password = inputPassword;
-
-    const signInJSON = JSON.stringify(signInObj);
-    console.log(signInJSON);
-
+    fetch(`http://localhost:8082/users/name/${inputUserName}`)
+        .then((data)=>{
+            console.log(data);
+            return data.json();
+        }).then((userdata)=>{
+        console.log(userdata.id);
+    }).catch((err)=>{
+        console.log(err)
+    })
 }
-
 
