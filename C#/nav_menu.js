@@ -8,8 +8,9 @@ let nav_menu = `
         <li><a href="#"><img class="icon" src="assets/default_image.png" alt="default_image"> <span> Search Goals </span> </a></li>
     </menu>
     
-    <div id="logout_div" onclick="deleteLocalStorage()">
-        <a href="homepage.html"><img class="icon" src="assets/default_image.png" alt="default_image"> <span> Logout</span>  </a>
+    <div id="logout_div" >
+        <a href="user_settings.html" ><img class="icon" src="assets/default_image.png" alt="default_image"> <span> Your account</span>  </a>
+        <a href="homepage.html" onclick="deleteLocalStorage()" ><img class="icon" src="assets/default_image.png" alt="default_image"> <span> Logout</span>  </a>
     </div>
 </nav>
 `;

@@ -1,0 +1,9 @@
+form label{
+    width: 100%;
+    margin-left: 0;
+    cursor: default;
+}
+
+form label[for="username"]{
+    margin-top: 3rem;
+}

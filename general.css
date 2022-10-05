@@ -91,13 +91,12 @@ input::placeholder {
 }
 /*red button*/
 .red_button {
-    color: white;
+    color: white  !important;
     border: 3px solid rgb(173, 39, 79);
     background-color: rgb(173, 39, 79);
 }
 .red_button:hover{
-    border: 3px solid rgb(117, 20, 44);
-    background-color: rgb(117, 20, 44);
+    color: white  !important;
 }
 /*-------------------------------------------------------------------------------------------------*/
 

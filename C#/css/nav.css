@@ -58,3 +58,9 @@ a img {
     position: absolute;
     bottom: 2rem;
 }
+
+#logout_div a {
+    margin-top: 12px;  
+    width: 100%;
+    display: inline-block;
+}
