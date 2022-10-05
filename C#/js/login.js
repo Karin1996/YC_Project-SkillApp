@@ -27,6 +27,8 @@ function serverRequest(json){
     })
     .then(response => {
         if(response.status == 200){
+
+            console.log("Loggin you in")
             //Will have a "set-cookie in the response header"
             //Redirect to the desktop/dashboard (with correct user)
             //window.location.href = "desktop.html";
