@@ -8,7 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/js/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/signin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/js/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/nav_menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/nav_menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/signin.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +67,20 @@
       <recent name="C:\WERK\YC_Project-SkillApp\c#\Assets" />
     </key>
   </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/YC_Project-SkillApp/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="signin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/YC_Project-SkillApp/Java/signin.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.signin.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -84,7 +99,12 @@
       <workItem from="1664626929176" duration="1275000" />
       <workItem from="1664779171699" duration="6369000" />
       <workItem from="1664866687086" duration="1759000" />
-      <workItem from="1664868904861" duration="14011000" />
+      <workItem from="1664868904861" duration="14452000" />
+      <workItem from="1664888463248" duration="1082000" />
+      <workItem from="1664898539370" duration="2053000" />
+      <workItem from="1664900630090" duration="1572000" />
+      <workItem from="1664949465311" duration="218000" />
+      <workItem from="1664949889376" duration="153000" />
     </task>
     <servers />
   </component>
