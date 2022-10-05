@@ -1,6 +1,9 @@
-document.getElementById("loginButton").addEventListener("click", requestLogin);
+document.getElementById("loginButton").addEventListener("click", function(e){
+    requestLogin(e)
+});
 
-function requestLogin(){
+function requestLogin(e){
+    e.preventDefault();
     //Get the name and password from the input fields
     let inputUserName = document.getElementById("username").value;
     let inputPassword = document.getElementById("password").value;
@@ -25,19 +28,21 @@ function serverRequest(json){
         },
         body: json
     })
-    .then(response => {
-        if(response.status == 200){
-
-            console.log("Loggin you in")
-            //Will have a "set-cookie in the response header"
-            //Redirect to the desktop/dashboard (with correct user)
-            //window.location.href = "desktop.html";
-
-            
+    .then((response) => response.json())
+    .then((response) => {
+        response = JSON.parse(response);
+        //If the response is a message, show the error message
+        if(response.Message){
+            document.getElementById("message").innerText = response.Message;
         }
         else{
-            document.getElementById("message").innerText = "Login failed";
+            //Store info in localstorage
+            localStorage.setItem('userInfo_id', JSON.stringify(response.id));
+            localStorage.setItem("userInfo_username", JSON.stringify(response.username));
+            localStorage.setItem("userInfo_name", JSON.stringify(response.name));
+            localStorage.setItem("userInfo_email", JSON.stringify(response.email));
+            //Redirect to the desktop/dashboard (with correct user)
+            window.location.href = "dashboard.html";
         }
     })
-    .catch(document.getElementById("message").innerText = "Something went wrong, try again later")
 }

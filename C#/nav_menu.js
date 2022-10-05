@@ -4,12 +4,12 @@ let nav_menu = `
     <div id="hamburger"></div>
 
     <menu>
-        <li><a href="desktop.html"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span> My Dashboard </span> </a></li>
-        <li><a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span> Search Goals </span> </a></li>
+        <li><a href="dashboard.html"><img class="icon" src="assets/default_image.png" alt="default_image"> <span> My Dashboard </span> </a></li>
+        <li><a href="#"><img class="icon" src="assets/default_image.png" alt="default_image"> <span> Search Goals </span> </a></li>
     </menu>
     
-    <div id="logout_div">
-        <a href="homepage.html"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span> Logout</span>  </a>
+    <div id="logout_div" onclick="deleteLocalStorage()">
+        <a href="homepage.html"><img class="icon" src="assets/default_image.png" alt="default_image"> <span> Logout</span>  </a>
     </div>
 </nav>
 `;

@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="../general.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <script src="js/url.js"></script>
+    <script src="js/checkUserInfo.js"></script>
     <!--Nav menu javascript, open and close menu -->
     <script src="js/nav.js" defer></script>
-    
-    <title>Desktop    </title>
+    <title>Dashboard</title>
 </head>
 <body>
     <!--Nav menu-->
@@ -21,7 +24,7 @@
     <!--Main content of logged in pages in here-->
     <main>
 
-        <h2>Welcome back <br>[username]!</h1>
+        <h2>Welcome,<br> <script>document.write(localStorage.getItem("userInfo_name").replaceAll('"', ''))</script>!</h1>
         <img class="icon" src="assets/default_image.png" alt="default_image">
 
         <h3>Your active goals</h3>
