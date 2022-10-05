@@ -12,10 +12,12 @@ let nav_menu = `
     
     <div>
         <a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>settings</span>  </a>
-        <a href="signin.html" onclick="logout"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>logout</span>  </a>
+        <div onclick="logout()"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>logout</span>  </div>
     </div>
 </nav>
 `;
+
+
 
 // insert nav in body
 document.body.insertAdjacentHTML("afterbegin", nav_menu);

@@ -17,7 +17,10 @@ function getUser() {
 }
 
 function logout() {
-    localStorage.clear();
+    console.log("ik ga uitloggen ")
+    localStorage.setItem("keyId", 0)
+    window.localStorage.clear();
+    window.location = "../Java/signin.html"
 }
 
 function getGoals() {
