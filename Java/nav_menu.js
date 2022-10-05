@@ -12,7 +12,7 @@ let nav_menu = `
     
     <div>
         <a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>settings</span>  </a>
-        <a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>logout</span>  </a>
+        <a href="signin.html" onclick="logout"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>logout</span>  </a>
     </div>
 </nav>
 `;
