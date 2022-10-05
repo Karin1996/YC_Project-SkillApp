@@ -1,11 +1,8 @@
 let userId = localStorage.getItem("keyId")
 
 function getUser() {
-<<<<<<< HEAD
-    fetch("http://localhost:8082/users/id/1")
-=======
+
     fetch(`http://localhost:8082/users/id/${userId}`)
->>>>>>> main
         .then((data)=>{
             console.log(data);
             return data.json();
@@ -25,11 +22,8 @@ function logout() {
 }
 
 function getGoals() {
-<<<<<<< HEAD
-    fetch("http://localhost:8082/users/id/1")
-=======
+
     fetch(`http://localhost:8082/users/id/${userId}`)
->>>>>>> main
         .then((data)=>{
             return data.json();
     }).then((goals)=>{

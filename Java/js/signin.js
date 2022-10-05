@@ -1,8 +1,11 @@
 function login() {
     let inputUserName = document.getElementById("username").value;
-    console.log(inputUserName)
+    let inputPassword = document.getElementById("password").value;
 
-    fetch("http://localhost:8082/users/name/wout")
+    console.log(inputUserName)
+    var url = `http://localhost:8082/users/name/${inputUserName}`;
+    console.log(url)
+    fetch(url)
         .then((data)=>{
             console.log(data);
             return data.json();
@@ -10,8 +13,11 @@ function login() {
         document.getElementById('message')
             .innerHTML=userdata.name;
         console.log(userdata.id);
+       if(userdata.password == inputPassword)
+       {
         localStorage.setItem("keyId", userdata.id)
         location.href = "../Java/profile.html";
+       }
     }).catch((err)=>{
         console.log(err)
     })
