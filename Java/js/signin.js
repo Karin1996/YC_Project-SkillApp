@@ -1,8 +1,9 @@
 function login() {
     let inputUserName = document.getElementById("username").value;
     console.log(inputUserName)
-
-    fetch(`http://localhost:8082/users/name/${inputUserName}`)
+    var url = `http://localhost:8082/users/name/${inputUserName}`;
+    console.log("url var1 is: "+url);
+    fetch(url)
         .then((data)=>{
             console.log(data);
             return data.json();
