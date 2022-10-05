@@ -1,5 +1,5 @@
 function getUser() {
-    fetch("http://localhost:8082/users/1")
+    fetch("http://localhost:8082/users/id/1")
         .then((data)=>{
             console.log(data);
             return data.json();
@@ -13,7 +13,7 @@ function getUser() {
 }
 
 function getGoals() {
-    fetch("http://localhost:8082/users/1")
+    fetch("http://localhost:8082/users/id/1")
         .then((data)=>{
             return data.json();
     }).then((goals)=>{
