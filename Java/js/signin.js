@@ -14,11 +14,13 @@ function login() {
         document.getElementById('message')
             .innerHTML=userdata.name;
         console.log(userdata.id);
-       if(userdata.password == inputPassword)
-       {
+
+        if(inputPassword == userdata.password)
+        {
         localStorage.setItem("keyId", userdata.id)
         location.href = "../Java/profile.html";
-       }
+        }
+
     }).catch((err)=>{
         console.log(err)
     })

@@ -4,12 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Java/css/nav.css">
     <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" type="text/css" href="../general.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!--Nav menu javascript, open and close menu -->
+    <link rel="stylesheet" href="css/HomePage.css">
     <script src="../Java/js/nav.js" defer></script>
     <script type="text/javascript" src="../Java/js/profile.js"></script>
     
@@ -18,18 +15,18 @@
 <body onload="getUser()">
     <!--Nav menu-->
     <script src="nav_menu.js"></script>
-    <button onclick="getGoals()">get goals</button>
+
 
     <!--Main content of logged in pages in here-->
     <main>
-        <h1>Welcome back</h1>
-        <h1 id="username"></h1>
-        <img class="icon" src="../Java/Assets/default_image.png" alt="default_image">
+        <div class="welcome">
+            <h1>Hi!</h1>
+            <h1 id="username"></h1>
+        </div>
 
         <div id="user_active_goals">
-            <div>
-                <img class="icon" src="../Java/Assets/default_image.png" alt="default_image">
-                <h2 id="goal">hoi</h2>
+            <div class="tile">
+                <h3 id="goal">you have no goals yet</h3>
             </div>
         </div>
     </main>

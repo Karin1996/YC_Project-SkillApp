@@ -33,9 +33,10 @@ function getGoals() {
         console.log(goals.goal[0].nameOfGoal);
         let data1="";
         goals.goal.map((values)=>{
-            data1+=`<div>
-                <img class="icon" src="../Java/Assets/default_image.png" alt="default_image">
-                <h2 id="goal">${values.nameOfGoal}</h2>
+            data1+=`<div class="tile">
+                <img class="img_goal" src="../Java/Assets/goals.jpg" alt="default_image">
+                <h3 id="goal">${values.nameOfGoal}</h3>
+                <h3 id="points">points: 3</h3>
             </div>`
         });
         document.getElementById('user_active_goals').innerHTML=data1;
