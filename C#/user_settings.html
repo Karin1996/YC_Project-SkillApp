@@ -23,17 +23,13 @@
     <script src="nav_menu.js"></script>
     <!--Main content of logged in pages in here-->
     <main>
-
-        <h2>Welcome,<br> <script>document.write(localStorage.getItem("userInfo_name").replaceAll('"', ''))</script>!</h1>
-        <img class="icon" src="assets/default_image.png" alt="default_image">
-
-        <h3>Change account information</h3>
-
+        <h2>Change account information</h1>
         <form action="#" id="form" class="login_register">
             <script>
                 let form = `
                 <label for="name">Name</label><input id="name" placeholder="`+localStorage.getItem("userInfo_name").replaceAll('"', '')+`">
-                <label for="username">Username<input id="username"  placeholder="`+localStorage.getItem("userInfo_username").replaceAll('"', '')+`">
+                <label for="username">Username</label><input id="username" placeholder="`+localStorage.getItem("userInfo_username").replaceAll('"', '')+`">
+                <label for="email">Email</label><input id="email" type="email" placeholder="`+localStorage.getItem("userInfo_email").replaceAll('"', '')+`">
                 `;
 
                 // insert nav in body
