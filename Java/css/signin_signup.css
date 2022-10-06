@@ -1,11 +1,12 @@
 /*General CSS styling*/
 
 body{
-    background-image: url("../assets/water1.jpg");
+    /*background-image: url("../assets/water1.jpg");*/
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
 }
+
 body::before{
     content: " ";
     position: absolute;
