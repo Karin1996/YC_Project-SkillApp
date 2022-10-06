@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a05f2ce7-e99f-4629-a445-4beb94acdd74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/HomePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/HomePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/nav_menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/nav_menu.js" afterDir="false" />
     </list>
+=======
+    <list default="true" id="a05f2ce7-e99f-4629-a445-4beb94acdd74" name="Changes" comment="" />
+>>>>>>> main
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="CSS File" />
       </list>
     </option>
@@ -37,7 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Java/Assets" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,6 +54,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WERK\YC_Project-SkillApp\Java\Assets" />
       <recent name="C:\WERK\YC_Project-SkillApp" />
       <recent name="C:\WERK\YC_Project-SkillApp\Java" />
       <recent name="C:\WERK\YC_Project-SkillApp\C#" />
@@ -60,6 +67,14 @@
       <recent name="C:\WERK\YC_Project-SkillApp\Assets" />
       <recent name="C:\WERK\YC_Project-SkillApp\c#\Assets" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/YC_Project-SkillApp/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="signin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/YC_Project-SkillApp/Java/signin.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -74,6 +89,19 @@
       <workItem from="1664347348821" duration="754000" />
       <workItem from="1664358740276" duration="7724000" />
       <workItem from="1664431184379" duration="1087000" />
+      <workItem from="1664517822338" duration="3700000" />
+      <workItem from="1664626105925" duration="407000" />
+      <workItem from="1664626929176" duration="1275000" />
+      <workItem from="1664779171699" duration="6369000" />
+      <workItem from="1664866687086" duration="1759000" />
+      <workItem from="1664868904861" duration="14452000" />
+      <workItem from="1664888463248" duration="1082000" />
+      <workItem from="1664898539370" duration="2053000" />
+      <workItem from="1664900630090" duration="1572000" />
+      <workItem from="1664949465311" duration="218000" />
+      <workItem from="1664949889376" duration="153000" />
+      <workItem from="1664953518616" duration="1098000" />
+      <workItem from="1664963223537" duration="4492000" />
     </task>
     <servers />
   </component>

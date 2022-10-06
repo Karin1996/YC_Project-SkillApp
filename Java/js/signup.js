@@ -1,5 +1,5 @@
 function generateJSON(){
-    let inlogObj = {};
+    let signUpObj = {};
 
     //Get the name and password from the input fields
     let emailInput = document.getElementById("mail").value;
@@ -12,28 +12,31 @@ function generateJSON(){
     if(checkPasswordMatch(inputPassword, verifyPassword)){
 
     //turn the values into an object
-    inlogObj.name = inputName;
-    inlogObj.username = inputUserName;
-    inlogObj.email = emailInput;
-    inlogObj.password = inputPassword;
-    inlogObj.points = 1;
-    inlogObj.goalProgress = 1;
-    inlogObj.subGoalProgess = 1;
-    inlogObj.Expert = false;
+    signUpObj.name = inputName;
+    signUpObj.username = inputUserName;
+    signUpObj.email = emailInput;
+    signUpObj.password = inputPassword;
+    signUpObj.points = 1;
+    signUpObj.goalProgress = 1;
+    signUpObj.subGoalProgess = 1;
+    signUpObj.Expert = false;
 
     //convert the object into a JSON file
-    const inlogJSON = JSON.stringify(inlogObj);
-    console.log(inlogJSON);
-    serverRequest(inlogJSON)
+    const signUpJSON = JSON.stringify(signUpObj);
+    console.log("array met input user " + signUpJSON);
+    serverRequest(signUpJSON);
     }
 
 }
 
 function serverRequest(json){
+    console.log("Wowzerts");
     fetch("http://localhost:8082/users", { headers: {
-      'Content-Type': 'application/json'}, method: 'POST', body: json})
-    .then(resp => resp.json())
-    .then(console.log);
+
+            'Content-Type': 'application/json'}, method: 'POST', body: json})
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+
 }
 
 function checkPasswordMatch(passwordOne, passwordTwo){

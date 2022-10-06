@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/HomePage.css">
+    <script src="../Java/js/nav.js" defer></script>
+    <script type="text/javascript" src="../Java/js/profile.js"></script>
+    
+    <title>Profile</title>
+</head>
+<body onload="getUser()">
+    <!--Nav menu-->
+    <script src="nav_menu.js"></script>
+
+
+    <!--Main content of logged in pages in here-->
+    <main>
+        <div class="welcome">
+            <h1>Hi!</h1>
+            <h1 id="username"></h1>
+        </div>
+
+        <div id="user_active_goals">
+            <div class="tile">
+                <h3 id="goal">you have no goals yet</h3>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

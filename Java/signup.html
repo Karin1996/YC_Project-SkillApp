@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../Java/css/signup.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../general.css">
+    <link rel="stylesheet" type="text/css" href="css/signin_signup.css">
     <script type="text/javascript" src="../Java/js/signup.js"></script>
-    <title>Title</title>
+    <title>Signup</title>
 </head>
-<body>
+<body class="flex_middle">
 
-<div class="sign-up-frame">
-    <h1> Sign Up </h1>
+<div class="login_register">
+    <h1>Sign up</h1>
 
     <form>
-        <input id="mail" class="signuptextbox" placeholder="E-Mail Address"> <br>
-        <input id="name" class="signuptextbox topbox" placeholder="Name"> <br>
-        <input id="username" class="signuptextbox topbox" placeholder="Username"> <br>
-        <input id="password" class="signuptextbox" placeholder="Password" type="password"> <br>
-        <input id="passwordconfirm" class="signuptextbox" placeholder="Confirm Password" type="password"> <br>
-        <input onclick="generateJSON()" class="signupbutton" type="submit" value="Sign Up">
+        <input id="mail"  placeholder="Email">
+        <input id="name" placeholder="Name">
+        <input id="username" placeholder="Username">
+        <input id="password" placeholder="Password" type="password">
+        <input id="passwordconfirm" placeholder="Confirm Password" type="password">
+        <input id="expert" type="checkbox"><label for="expert">Expert</label>
+
+        <span id="message">Place message here. eg "account made"</span>
+
+        <input class="button" onclick="generateJSON()" type="submit" value="Sign Up">
+        <a href="signin.html">I already have an account</a>
     </form>
 </div>
 
