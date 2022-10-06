@@ -10,7 +10,7 @@ let nav_menu = `
     </menu>
     
     <div>
-        <a href="#"> <span>settings</span>  </a>
+        <a href="./accountinfo.html"> <span>settings</span>  </a>
         <div onclick="logout()"> <span>logout</span>  </div>
     </div>
 </nav>
