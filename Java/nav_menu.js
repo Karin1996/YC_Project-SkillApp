@@ -4,10 +4,9 @@ let nav_menu = `
     <div id="hamburger"><img class="burger" src="./Assets/hamburger.png" alt=""></div>
 
     <menu>
-        <li><a href="#"> <span>Lorem</span> </a></li>
-        <li><a href="#"> <span>Lorem</span> </a></li>
-        <li><a href="#"> <span>Lorem</span> </a></li>
-        <li><a href="#"> <span>Lorem</span> </a></li>
+        <li><a href="#"> <span>Skill Quiz</span> </a></li>
+        <li><a href="#"> <span>Library</span> </a></li>
+        <li><a href="./HomePage.html"> <span>Home</span> </a></li>
     </menu>
     
     <div>
