@@ -25,22 +25,7 @@
     <main>
         <h2>Change account information</h1>
         <form action="#" id="form" class="login_register">
-            <script>
-                let form = `
-                <label for="name">Name</label><input id="name" placeholder="`+localStorage.getItem("userInfo_name").replaceAll('"', '')+`">
-                <label for="username">Username</label><input id="username" placeholder="`+localStorage.getItem("userInfo_username").replaceAll('"', '')+`">
-                <label for="email">Email</label><input id="email" type="email" placeholder="`+localStorage.getItem("userInfo_email").replaceAll('"', '')+`">
-                `;
-
-                // insert nav in body
-                document.getElementById("form").innerHTML = form;
-            </script>
-
-            <span id="message"></span>
-            
-
-            <input class="button red_button" type="submit" value="Cancel" onclick="clearInputs()">
-            <input class="button" type="submit" value="Save" id="saveButton">
+            <!--Content is generated in checkUserInfo.js-->
         </form>
 
     </main>

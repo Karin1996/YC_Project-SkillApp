@@ -10,7 +10,7 @@ let nav_menu = `
     
     <div id="logout_div" >
         <a href="user_settings.html" ><img class="icon" src="assets/default_image.png" alt="default_image"> <span> Your account</span>  </a>
-        <a href="homepage.html" onclick="deleteLocalStorage()" ><img class="icon" src="assets/default_image.png" alt="default_image"> <span> Logout</span>  </a>
+        <a href="homepage.html" onclick="deleteLocalStorage()"><img class="icon" src="assets/default_image.png" alt="default_image"> <span> Logout</span>  </a>
     </div>
 </nav>
 `;

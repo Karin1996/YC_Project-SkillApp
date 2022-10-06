@@ -38,9 +38,9 @@ function serverRequest(json){
         else{
             //Store info in localstorage
             localStorage.setItem('userInfo_id', JSON.stringify(response.id));
-            localStorage.setItem("userInfo_username", JSON.stringify(response.username));
-            localStorage.setItem("userInfo_name", JSON.stringify(response.name));
-            localStorage.setItem("userInfo_email", JSON.stringify(response.email));
+            //localStorage.setItem("userInfo_username", JSON.stringify(response.username));
+            //localStorage.setItem("userInfo_name", JSON.stringify(response.name));
+            //localStorage.setItem("userInfo_email", JSON.stringify(response.email));
             //Redirect to the desktop/dashboard (with correct user)
             window.location.href = "dashboard.html";
         }
