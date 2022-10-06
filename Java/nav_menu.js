@@ -1,18 +1,18 @@
 
 let nav_menu = ` 
 <nav>
-    <div id="hamburger">X</div>
+    <div id="hamburger"><img class="burger" src="./Assets/hamburger.png" alt=""></div>
 
     <menu>
-        <li><a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>Lorem</span> </a></li>
-        <li><a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>Lorem</span> </a></li>
-        <li><a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>Lorem</span> </a></li>
-        <li><a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>Lorem</span> </a></li>
+        <li><a href="#"> <span>Lorem</span> </a></li>
+        <li><a href="#"> <span>Lorem</span> </a></li>
+        <li><a href="#"> <span>Lorem</span> </a></li>
+        <li><a href="#"> <span>Lorem</span> </a></li>
     </menu>
     
     <div>
-        <a href="#"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>settings</span>  </a>
-        <div onclick="logout()"><img class="icon" src="../Java/Assets/default_image.png" alt="default_image"> <span>logout</span>  </div>
+        <a href="#"> <span>settings</span>  </a>
+        <div onclick="logout()"> <span>logout</span>  </div>
     </div>
 </nav>
 `;

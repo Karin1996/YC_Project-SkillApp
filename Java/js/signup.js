@@ -32,9 +32,11 @@ function generateJSON(){
 function serverRequest(json){
     console.log("Wowzerts");
     fetch("http://localhost:8082/users", { headers: {
+
             'Content-Type': 'application/json'}, method: 'POST', body: json})
         .then((response) => response.json())
         .then((data) => console.log(data));
+
 }
 
 function checkPasswordMatch(passwordOne, passwordTwo){
