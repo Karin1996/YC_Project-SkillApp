@@ -89,13 +89,18 @@ h4 {
     letter-spacing: 6px;
 }
 
-.container-goal form {
+.container form {
     display: flex;
     flex-direction: column;
 }
 
-input {
+.container input, textarea, select {
+    margin-bottom: 10px;
     border: 1px dotted rgb(51,49,49);
+}
+
+.container label {
+    font-size: 1.5rem;
 }
 
 

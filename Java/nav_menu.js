@@ -4,15 +4,20 @@ let nav_menu = `
     <div id="hamburger"><img class="burger" src="./Assets/hamburger.png" alt=""></div>
 
     <menu>
+        <li><a href="./profile.html"> <span>Home</span> </a></li>
+        <li><a href="./addGoal.html"> <span>Make a Goal</span> </a></li>
+    </menu>
+
+    <menu>
         <li><a href="#"> <span>Skill Quiz</span> </a></li>
         <li><a href="#"> <span>Library</span> </a></li>
-        <li><a href="./HomePage.html"> <span>Home</span> </a></li>
+        <li><a href="./HomePage.html"> <span>Landing Page</span> </a></li>
     </menu>
     
-    <div>
-        <a href="./accountinfo.html"> <span>settings</span>  </a>
+    <menu>
+        <li><a href="./accountinfo.html"> <span>Account settings</span> </a></li>
         <div onclick="logout()"> <span>logout</span>  </div>
-    </div>
+    </menu>
 </nav>
 `;
 
