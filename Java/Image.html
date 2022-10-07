@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="file" name="image" id="image" />
+    <button type="button" onclick="loadImage()">Do iets</button>
+
+    <script>
+
+      function getBase64(file) {
+        
+
+        // Filereader kan voor ons de file input uitlezen
+        var reader = new FileReader();
+        reader.readAsDataURL(file);
+        // Op het moment dat de file is geladen voer deze function uit
+        reader.onload = function () {
+          // reader.result bevat de base64 code
+          console.log(reader.result);
+        };
+        reader.onerror = function (error) {
+          console.log("Error: ", error);
+        };
+
+        let imageObj = {};
+        imageObj.imageCode = reader.result;
+        const imageCodeJSON = JSON.stringify(imageObj);
+        serverRequest(imageCodeJSON);
+      }
+      function serverRequest(json){
+    console.log("Wowzerts");
+    fetch("http://localhost:8082/image", { headers: {
+        
+            'Content-Type': 'application/json'}, method: 'POST', body: json})
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+
+}
+
+      // loadImage laad de geselecteerde image in de file input
+      function loadImage() {
+        // Een file input heeft een files property van het type array en bevat alle bestanden die geselecteerd zijn
+        let f = document.getElementById("image").files[0];
+
+        // Get the base 64
+        getBase64(f);
+      }
+    </script>
+  </body>
+</html>
