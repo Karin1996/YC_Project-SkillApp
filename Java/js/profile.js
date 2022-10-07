@@ -44,3 +44,4 @@ function getGoals() {
         console.log(err)
     })
 }
+

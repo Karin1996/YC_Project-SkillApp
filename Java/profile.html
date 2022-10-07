@@ -13,21 +13,44 @@
     <title>Profile</title>
 </head>
 <body onload="getUser()">
-    <!--Nav menu-->
     <script src="nav_menu.js"></script>
 
-
-    <!--Main content of logged in pages in here-->
     <main>
         <div class="welcome">
             <h1>Hi!</h1>
             <h1 id="username"></h1>
         </div>
 
+        <h4>Goals to achieve</h4>
+        <div class="line"></div>
+
         <div id="user_active_goals">
             <div class="tile">
                 <h3 id="goal">you have no goals yet</h3>
             </div>
+        </div>
+
+        <h4>Goals made by you</h4>
+        <div class="line"></div>
+
+        <button class="make-goal"  href="#">Make new Goal</button>
+        <div class="container-goal ">
+            <form onsubmit="addGoal()" class="goal-form" id="form-appear" action="">
+                <label htmlFor="name-of-goal">Name of Goal</label>
+                <input type="text" id="name-of-goal" placeholder="Name of Goal">
+
+                <label htmlFor="description">Description of Goal</label>
+                <textarea id="description" placeholder="Description of Goal">Description of your goal</textarea>
+
+                <label htmlFor="goal-image">
+                    Add image
+                    <input type="file" name="goal-image" id="goal-image" onChange="handleImageChange()"/>
+                    <label/>
+                    <img src="" alt="" className="image-preview"/>
+                </label>
+
+                <button class="make-goal"  href="#">Upload your Goal</button>
+            </form>
         </div>
     </main>
 
