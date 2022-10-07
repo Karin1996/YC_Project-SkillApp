@@ -33,25 +33,8 @@
         <h4>Goals made by you</h4>
         <div class="line"></div>
 
-        <button class="make-goal"  href="#">Make new Goal</button>
-        <div class="container-goal ">
-            <form onsubmit="addGoal()" class="goal-form" id="form-appear" action="">
-                <label htmlFor="name-of-goal">Name of Goal</label>
-                <input type="text" id="name-of-goal" placeholder="Name of Goal">
+        <a href="./addGoal.html"><button class="make-goal">Make new Goal</button></a>
 
-                <label htmlFor="description">Description of Goal</label>
-                <textarea id="description" placeholder="Description of Goal">Description of your goal</textarea>
-
-                <label htmlFor="goal-image">
-                    Add image
-                    <input type="file" name="goal-image" id="goal-image" onChange="handleImageChange()"/>
-                    <label/>
-                    <img src="" alt="" className="image-preview"/>
-                </label>
-
-                <button class="make-goal"  href="#">Upload your Goal</button>
-            </form>
-        </div>
     </main>
 
 </body>

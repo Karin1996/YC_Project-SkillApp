@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/HomePage.css">
+  <script src="../Java/js/nav.js" defer></script>
+  <script type="text/javascript" src="../Java/js/accountinfo.js"></script>
+
+  <title>Account information</title>
+</head>
+<body onload="getAccountInfo()">
+
+<script src="nav_menu.js"></script>
+
+<main>
+  <div class="welcome">
+    <h1>Add Goal</h1>
+    <h1 id="kiwi"></h1>
+  </div>
+
+  <div class="container">
+    <form onsubmit="addGoal()" class="goal-form" id="form-appear" action="">
+      <label htmlFor="name-of-goal">Name of Goal</label>
+      <input type="text" id="name-of-goal" placeholder="Name of Goal">
+
+      <label htmlFor="description">Description of Goal</label>
+      <textarea id="description" placeholder="Description of Goal">Description of your goal</textarea>
+
+      <label htmlFor="category">Category</label>
+      <select
+      name="category"
+      id="category"
+      >
+      <option value="sports">Sports</option>
+      <option value="music">Music</option>
+      <option value="food">Food</option>
+      <option value="programming">Programming</option>
+      <option value="diy">DIY</option>
+      <option value="social">Social</option>
+      </select>
+
+      <label htmlFor="goal-image">
+        Add image
+        <input type="file" name="goal-image" id="goal-image" onChange="handleImageChange()"/>
+        <label/>
+        <img src="" alt="" className="image-preview"/>
+      </label>
+
+      <br>
+
+      <button class="make-goal">Upload your Goal</button>
+    </form>
+  </div>
+</main>
+
+</body>
+</html>
