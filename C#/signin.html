@@ -10,6 +10,12 @@
     <link rel="stylesheet" type="text/css" href="css/signin_signup.css">
     <script src="js/url.js" defer></script>
     <script src="js/login.js" defer></script>
+
+    <script>
+        if(localStorage.getItem("userInfo_id")){
+            window.location.href = "dashboard.html";
+        }
+    </script>
     <title>Login</title>
 </head>
 <body class="flex_middle">

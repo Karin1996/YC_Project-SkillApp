@@ -7,7 +7,11 @@
     <link rel="stylesheet" type="text/css" href="../general.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/signin_signup.css">
-    <!--<script type="text/javascript" src="../Java/js/signup.js"></script>-->
+    <script>
+        if(localStorage.getItem("userInfo_id")){
+            window.location.href = "dashboard.html";
+        }
+    </script>
     <title>Signup</title>
 </head>
 <body class="flex_middle">

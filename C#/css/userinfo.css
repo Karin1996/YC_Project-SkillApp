@@ -1,28 +1,27 @@
-form label:first-of-type{
-    margin-top: 0;
-}
-
-
 .info_form{
     display: flex;
     flex-direction: row;
     margin-top: 2rem;
 }
 
-#info_form:first-of-type{
+.info_form:first-child{
     margin-top: 0;
 }
+
 .info_form label{
     cursor: default;
     margin-left: 0;
     width: auto;
     line-height: 2rem;
     margin-right: 1rem;
+    display: inline-block;
 }
+
 .info_form input{
     margin-top: 0;
     width: calc(auto - 1rem);
 }
+
 
 .info_form.street label:nth-child(3){
     margin-left: 1rem;

@@ -1,4 +1,4 @@
-//Fill the object with correct info when a request is made
+//Fill the object with correct info
 let userInfo = {};
 
 if(localStorage.getItem("userInfo_id")){
@@ -28,11 +28,11 @@ function serverRequest(obj){
     })
     .then((response) => response.json())
     .then((response) => {
+       
         //Save the object
         userInfo = response;
         //Dont save the password
         delete userInfo.password;
-        console.log(userInfo);
 
         //Place information in HTML where possible
         placeInformationInHtml();
@@ -87,7 +87,7 @@ function generateForm(){
         <span id="message"></span>
             
         <input class="button red_button" type="submit" value="Cancel" onclick="clearInputs()">
-        <input class="button" type="submit" value="Save" id="saveButton">
+        <input class="button" type="submit" value="Save" id="saveButton" onclick="updateUserInfo()">
     `;
 
     // insert nav in body
