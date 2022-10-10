@@ -7,6 +7,9 @@
     <link rel="stylesheet" type="text/css" href="../general.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/signin_signup.css">
+    <link rel="stylesheet" href="css/userinfo.css">
+    <script src="js/url.js" defer></script>
+    <script src="js/register.js" defer></script>
     <script>
         if(localStorage.getItem("userInfo_id")){
             window.location.href = "dashboard.html";
@@ -23,22 +26,58 @@
     <div class="login_register">
         <h1>Sign up</h1>
 
-        <form>
-            <input id="mail"  placeholder="Email">
-            <input id="name" placeholder="Name">
-            <input id="username" placeholder="Username">
-            <input id="password" placeholder="Password" type="password">
-            <input id="passwordconfirm" placeholder="Confirm Password" type="password"> 
-            <input id="expert" type="checkbox"><label for="expert">Expert</label> 
+        <form action="#" id="form">
+            <div class="info_form">
+                
+            </div>
+            <div class="info_form password">
+                <label for="name">Name*</label>
+                <input id="name" placeholder="Name">
+                <label for="dateOfBirth">Birthday*</label>
+                <input id="dateOfBirth" placeholder="01-01-2000">
+            </div>
+            <div class="info_form">
+                <label for="username">Username*</label>
+                <input id="username" placeholder="Username">
+            </div>
+            <div class="info_form">
+                <label for="email">Email*</label>
+                <input id="email" type="email" placeholder="Email">
+            </div>
+            <div class="info_form password">
+                <label for="password">Password*</label>
+                <input id="password" type="password" placeholder="****">
+                <label for="passwordconfirm">Confirm</label>
+                <input id="passwordconfirm" type="password" placeholder="****">
+            </div>
+            <div class="info_form street">
+                <label for="street">Street*</label>
+                <input id="street" placeholder="Street">
+                <label for="housenumber">Number*</label>
+                <input id="housenumber" placeholder="00">
+            </div>
+            <div class="info_form city">
+                <label for="postalcode">Zipcode*</label>
+                <input id="postalcode" placeholder="0000AA">
+                <label for="city">City*</label>
+                <input id="city" placeholder="City">
+            </div>
+            <div class="info_form">
+                <label for="country">Country*</label>
+                <input id="country" placeholder="Country">
+            </div>
+            <div class="info_form">
+                <label for="expert">Are you an expert?</label>
+                <input id="expert" type="checkbox"> 
+            </div>
 
             <span id="message"></span>
 
-            <input class="button" type="submit" value="Sign Up">
+            <input class="button" type="submit" value="Sign Up" id="registerUserButton">
             <a href="signin.html">I already have an account</a>
         </form>
+
     </div>
-    
-   <!-- <input onclick="generateJSON()" class="signupbutton" type="submit" value="Sign Up">-->
 
 </body>
 </html>

@@ -91,5 +91,5 @@ function generateForm(){
     `;
 
     // insert nav in body
-    document.getElementById("form").innerHTML = formContent;
+    if(document.getElementById("form")){document.getElementById("form").innerHTML = formContent};
 }

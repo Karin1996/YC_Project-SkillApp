@@ -33,6 +33,7 @@ function serverRequest(json){
         response = JSON.parse(response);
         //If the response is a message, show the error message
         if(response.Message){
+            document.getElementById("message").style.color = "rgb(224, 67, 114)";
             document.getElementById("message").innerText = response.Message;
         }
         else{
