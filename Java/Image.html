@@ -21,17 +21,17 @@
         // Op het moment dat de file is geladen voer deze function uit
         reader.onload = function () {
           // reader.result bevat de base64 code
+
           console.log(reader.result);
           let imageUrl = reader.result;
           imageObj.imageCode = imageUrl;
         const imageCodeJSON = JSON.stringify(imageObj);
         serverRequest(imageCodeJSON);
+
         };
         reader.onerror = function (error) {
           console.log("Error: ", error);
         };
-
-     
       }
 
       function serverRequest(json){

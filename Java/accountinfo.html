@@ -24,14 +24,34 @@
         <h1 id="kiwi"></h1>
     </div>
 
-    <div id="user_active_goals">
-        <div class="tile">
-            <form>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe">
-              </form>
+
+            <div class="container">
+                <form class="goal-form">
+                <label for="name">name</label>
+                <input id="name" value="">
+
+                <label for="username">username</label>
+                <input id="username" value="">
+
+                <label for="email">email</label>
+                <input id="email"  placeholder="Email">
+
+                <label for="password">password</label>
+                <input id="password" placeholder="Password" type="password">
+
+                <label for="location">location</label>
+                <input id="location" placeholder="Location">
+
+                <label for="expert">expert</label>
+                <input id="expert" type="checkbox"><label for="expert">Expert</label>
+
+                <span id="message">Place message here. eg "account updated"</span>
+
+                <input class="button" onclick="generateJSON()" type="submit" value="Save changes">
+                <a href="signin.html">I already have an account</a>
+                </form>
+            </div>
+
         </div>
     </div>
 </main>
