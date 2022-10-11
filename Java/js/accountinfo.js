@@ -1,25 +1,27 @@
 let userId = localStorage.getItem("keyId")
 
-function getAccountInfo() {
 
+function getAccountInfo() {
     fetch(`http://localhost:8082/users/id/${userId}`)
         .then((data)=>{
             console.log(data);
             return data.json();
         }).then((userdata)=>{
              console.log("Ophalen account info met id: " + userdata.id);
-             document.getElementById('name')
-                 .innerHTML=userdata.name;
              document.getElementById('kiwi')
                  .innerHTML=userdata.name;
+             document.getElementById('name')
+                 .value=userdata.name;
              document.getElementById('username')
-                 .innerHTML=userdata.username;
-             document.getElementById('dob')
-                 .innerHTML=userdata.dob;
-             document.getElementById('location')
-                 .innerHTML=userdata.location;
+                 .value=userdata.username;
              document.getElementById('email')
-                 .innerHTML=userdata.email;
+                 .value=userdata.email;
+             document.getElementById('password')
+                  .value=userdata.password;
+             document.getElementById('location')
+                 .value=userdata.location;
+             document.getElementById('expert')
+                 .value=userdata.expert;
     }).catch((err)=>{
         console.log(err)
     })
@@ -27,10 +29,37 @@ function getAccountInfo() {
 
 
 
-function logout() {
-    console.log("ik ga uitloggen ")
-    localStorage.setItem("keyId", 0)
-    window.localStorage.clear();
-    window.location = "../Java/signin.html"
+function generateJSON(){
+    let accountObj = {};
+
+    //Get the name and password from the input fields
+    let inputName = document.getElementById("name").value;
+    let inputUserName = document.getElementById("username").value;
+    let inputEmail = document.getElementById("email").value;
+    let inputPassword = document.getElementById("password").value;
+    let inputLocation = document.getElementById("location").value;
+    let inputExpert = document.getElementById("expert").value;
+
+    //add values to the object
+    accountObj.name = inputName;
+    accountObj.username = inputUserName;
+    accountObj.email = inputEmail;
+    accountObj.password = inputPassword;
+    accountObj.location = inputLocation;
+    accountObj.Expert = inputExpert;
+
+    //convert the object into a JSON file
+    const accountObjJSON = JSON.stringify(accountObjJSON);
+    console.log("geupdate versie account informatie: " + accountObjJSON);
+    serverRequest(accountObjJSON);
 }
 
+function serverRequest(json){
+    console.log("in de functie serverRequest(json)");
+    fetch("http://localhost:8082/users", { headers: {
+
+            'Content-Type': 'application/json'}, method: 'PUT', body: json})
+        .then((response) => response.json())
+        .then((data) => console.log(data));
+
+}
