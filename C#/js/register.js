@@ -87,7 +87,6 @@ function serverRequest(json){
                 document.getElementById("message").style.color = "white";
                 document.getElementById("message").innerText = "Account registered";
             }
-            
     })
 }
 

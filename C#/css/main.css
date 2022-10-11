@@ -47,7 +47,7 @@ h3{
     margin-top: 4rem;
     margin-bottom: 1rem;
 }
-main div#user_active_goals{
+main div.user_active_goals{
     position: relative;
     width: auto;
     background: rgba(255, 255, 255, 0.2);
@@ -62,7 +62,7 @@ main div#user_active_goals{
     column-gap: 2rem;
     row-gap: 2rem;
 }
-main div#user_active_goals div{
+main div.user_active_goals div{
     display: inline-block;
     box-sizing: border-box;
     background-color: white;
@@ -73,7 +73,7 @@ main div#user_active_goals div{
     overflow: hidden;
 }
 
-main div#user_active_goals img{
+main div.user_active_goals img{
     display: block;
     text-align: center;
     width: 11rem;
@@ -84,7 +84,7 @@ main div#user_active_goals img{
     transform: translate(-50%, -50%);
 }
 
-main div#user_active_goals a{
+main div.user_active_goals a{
     display: block;
     text-align: center;
     width: 10rem;
@@ -94,7 +94,7 @@ main div#user_active_goals a{
     flex-direction: column;
     justify-content: flex-end;
 }
-main div#user_active_goals a span{
+main div.user_active_goals a span{
     display: block;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.7);

@@ -34,7 +34,6 @@ function serverRequest(json){
     fetch("http://localhost:8082/users/", { headers: {
       'Content-Type': 'application/json'}, method: 'POST', body: json})
     .then(resp => resp.json())
-    .then(console.log);
 }
 
 function checkPasswordMatch(passwordOne, passwordTwo){
