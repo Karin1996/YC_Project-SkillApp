@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a05f2ce7-e99f-4629-a445-4beb94acdd74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Java/GoalPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/js/GoalPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/Image.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Image.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -62,7 +65,7 @@
       <recent name="C:\WERK\YC_Project-SkillApp\c#\Assets" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/YC_Project-SkillApp/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -96,6 +99,9 @@
       <workItem from="1664949889376" duration="153000" />
       <workItem from="1664953518616" duration="1098000" />
       <workItem from="1664963223537" duration="4492000" />
+      <workItem from="1665384836965" duration="1328000" />
+      <workItem from="1665424904560" duration="625000" />
+      <workItem from="1665473890306" duration="1744000" />
     </task>
     <servers />
   </component>

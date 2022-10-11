@@ -21,17 +21,17 @@
         // Op het moment dat de file is geladen voer deze function uit
         reader.onload = function () {
           // reader.result bevat de base64 code
-          console.log(reader.result);
+          console.log(" bing bong" + reader.result);
+          let imageObj = reader.result;
+          console.log("hallo zie je mij" + imageObj)
+          const imageCodeJSON = JSON.stringify(imageObj);
+          serverRequest(imageCodeJSON);
         };
         reader.onerror = function (error) {
           console.log("Error: ", error);
         };
-
-        let imageObj = {};
-        imageObj.imageCode = reader.result;
-        const imageCodeJSON = JSON.stringify(imageObj);
-        serverRequest(imageCodeJSON);
       }
+
       function serverRequest(json){
     console.log("Wowzerts");
     fetch("http://localhost:8082/image", { headers: {
