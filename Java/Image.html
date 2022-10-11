@@ -8,13 +8,13 @@
   </head>
   <body>
     <input type="file" name="image" id="image" />
-    <button type="button" onclick="loadImage()">Do iets</button>
-
+    <button type="button" onclick="uploadImage()">Do iets</button>
+    <button type="button" onclick="loadImage()">Show me the money</button>
     <script>
 
       function getBase64(file) {
         
-
+        let imageObj = {};
         // Filereader kan voor ons de file input uitlezen
         var reader = new FileReader();
         reader.readAsDataURL(file);
@@ -22,20 +22,22 @@
         reader.onload = function () {
           // reader.result bevat de base64 code
           console.log(reader.result);
+          let imageUrl = reader.result;
+          imageObj.imageCode = imageUrl;
+        const imageCodeJSON = JSON.stringify(imageObj);
+        serverRequest(imageCodeJSON);
         };
         reader.onerror = function (error) {
           console.log("Error: ", error);
         };
 
-        let imageObj = {};
-        imageObj.imageCode = reader.result;
-        const imageCodeJSON = JSON.stringify(imageObj);
-        serverRequest(imageCodeJSON);
+     
       }
+
       function serverRequest(json){
     console.log("Wowzerts");
     fetch("http://localhost:8082/image", { headers: {
-        
+
             'Content-Type': 'application/json'}, method: 'POST', body: json})
         .then((response) => response.json())
         .then((data) => console.log(data));
@@ -43,12 +45,17 @@
 }
 
       // loadImage laad de geselecteerde image in de file input
-      function loadImage() {
+      function uploadImage() {
         // Een file input heeft een files property van het type array en bevat alle bestanden die geselecteerd zijn
         let f = document.getElementById("image").files[0];
 
         // Get the base 64
         getBase64(f);
+      }
+
+      function loadImage()
+      {
+
       }
     </script>
   </body>
