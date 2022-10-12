@@ -9,7 +9,8 @@
   <body>
     <input type="file" name="image" id="image" />
     <button type="button" onclick="uploadImage()">Do iets</button>
-    <button type="button" onclick="loadImage()">Show me the money</button>
+    <button type="button" onclick="loadImage()">Show me the money</button><br>
+    <img src="" id="pokahontas" />
     <script>
 
       function getBase64(file) {
@@ -53,10 +54,19 @@
         getBase64(f);
       }
 
-      function loadImage()
-      {
+      
 
-      }
+
+  function loadImage() {
+        fetch(`http://localhost:8082/image/71`)
+  .then((response) => {console.log(response);
+  return response.blob();
+  }).then(imgBlob => {console.log(imgBlob);
+  document.getElementById('pokahontas').src = URL.createObjectURL(imgBlob);
+  })
+
+}
+
     </script>
   </body>
 </html>
