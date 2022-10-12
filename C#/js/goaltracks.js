@@ -17,6 +17,7 @@ function serverRequest(){
     })
     .then((response) => response.json())
     .then((response) => {
+        console.log(response);
         generateTracks(response);
     })
 }
@@ -25,7 +26,7 @@ function generateTracks(json){
     //There are no goals/tracks in the db
     if(json.length <= 0){
         let msg = document.createElement("p");
-        msg.innerHTML = "There are no tracks available";
+        msg.innerHTML = "There are no goals available";
         document.getElementById("all_goals").style.display = "block";
         document.getElementById("all_goals").append(msg);
     }

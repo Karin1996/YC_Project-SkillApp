@@ -1,5 +1,14 @@
-function updateUserInfo(){
-    let allEmpty = true;
+document.addEventListener("DOMContentLoaded", function(){
+    setInterval(function(){
+        document.getElementById("saveButton").addEventListener("click", function(e){
+            updateUserInfo(e)
+        })
+    }, 100)
+});
+
+
+function updateUserInfo(e){
+    e.preventDefault();
 
     if(!localStorage.getItem("userInfo_id")){
         //User is not logged in

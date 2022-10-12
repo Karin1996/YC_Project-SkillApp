@@ -87,7 +87,7 @@ function generateForm(){
         <span id="message"></span>
             
         <input class="button red_button" type="submit" value="Cancel" onclick="clearInputs()">
-        <input class="button" type="submit" value="Save" id="saveButton" onclick="updateUserInfo()">
+        <input class="button" type="submit" value="Save" id="saveButton">
     `;
 
     // insert nav in body
