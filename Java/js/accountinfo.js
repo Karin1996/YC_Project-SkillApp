@@ -29,7 +29,9 @@ function getAccountInfo() {
 
 
 
-function generateJSON(){
+function updateJSON(){
+    console.log("TESTING 1");
+
     let accountObj = {};
 
     //Get the name and password from the input fields
@@ -49,14 +51,14 @@ function generateJSON(){
     accountObj.Expert = inputExpert;
 
     //convert the object into a JSON file
-    const accountObjJSON = JSON.stringify(accountObjJSON);
-    console.log("geupdate versie account informatie: " + accountObjJSON);
-    serverRequest(accountObjJSON);
+    const meloenJSON = JSON.stringify(accountObj);
+    console.log("geupdate versie account informatie: " + meloenJSON);
+    serverRequestUpdate(meloenJSON);
 }
 
-function serverRequest(json){
+function serverRequestUpdate(json){
     console.log("in de functie serverRequest(json)");
-    fetch("http://localhost:8082/users", { headers: {
+    fetch(`http://localhost:8082/users/1`, { headers: {
 
             'Content-Type': 'application/json'}, method: 'PUT', body: json})
         .then((response) => response.json())

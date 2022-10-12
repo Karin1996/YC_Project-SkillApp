@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a05f2ce7-e99f-4629-a445-4beb94acdd74" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
       <change beforePath="$PROJECT_DIR$/Java/Image.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/Image.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/accountinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/accountinfo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java/js/accountinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/accountinfo.js" afterDir="false" />
->>>>>>> main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,11 +35,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
-  }
-}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\WERK\YC_Project-SkillApp\Java\Assets" />
@@ -59,7 +51,7 @@
       <recent name="C:\WERK\YC_Project-SkillApp\c#\Assets" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/YC_Project-SkillApp/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
