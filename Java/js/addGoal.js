@@ -1,9 +1,9 @@
 
-let imageObj = {};
 
+let goalObj = {};
 function addGoal(){
 
-    let goalObj = {};
+    
 
     //Get the name and password from the input fields
     let goalName = document.getElementById("name-of-goal").value;
@@ -12,26 +12,27 @@ function addGoal(){
         //turn the values into an object
         goalObj.nameOfGoal = goalName;
         goalObj.description = description;
-        imageObj.goal = goalObj;
+        //imageObj.goal = goalObj;
         //convert the object into a JSON file
         const goalJSON = JSON.stringify(goalObj);
-        console.log(imageObj);
+  //      console.log(imageObj);
 
-        //goalRequest(goalJSON);
+        goalRequest(goalJSON);
     }
 
 function goalRequest(json){
-    console.log("goalsss");
+    console.log("goalsssFELIX");
+    console.log(json);
     fetch("http://localhost:8082/goals", { headers: {
 
             'Content-Type': 'application/json'}, method: 'POST', body: json})
-        .then((response) => response.json())
-        .then((data) => console.log(data));
+        // .then((response) => response.json())
+        // .then((data) => console.log(data));
 }
 
 
 function getBase64(file) {
-        
+  let imageObj = {};   
     // Filereader kan voor ons de file input uitlezen
     let reader = new FileReader();
     reader.readAsDataURL(file);
@@ -43,6 +44,8 @@ function getBase64(file) {
       let imageUrl = reader.result;
       imageObj.imageCode = imageUrl;
       console.log(imageObj);
+      console.log("NOG EEN CHECK");
+      goalObj.image = imageObj;
    // const imageCodeJSON = JSON.stringify(imageObj);
    // serverRequest(imageCodeJSON);
 
