@@ -68,6 +68,8 @@ function serverRequest(json){
     })
     .then((response) => response.json())
     .then((response) => {
+
+        console.log(response)
        
             let wordUsername = "UserName";
             let wordEmail = "Email";
@@ -87,6 +89,9 @@ function serverRequest(json){
                 document.getElementById("message").style.color = "white";
                 document.getElementById("message").innerText = "Account registered";
             }
+    })
+    .catch(error =>{
+        console.log("not getting a response");
     })
 }
 
