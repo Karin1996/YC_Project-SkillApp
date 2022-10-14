@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a05f2ce7-e99f-4629-a445-4beb94acdd74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Java/css/TopBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/GoalPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/GoalPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/accountinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/accountinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/addGoal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/addGoal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/Java/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/GoalPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/GoalPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/accountinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/accountinfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -33,9 +41,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -98,7 +108,7 @@
       <workItem from="1665473890306" duration="4502000" />
       <workItem from="1665572947181" duration="1394000" />
       <workItem from="1665645515877" duration="1707000" />
-      <workItem from="1665734740838" duration="1147000" />
+      <workItem from="1665734740838" duration="10410000" />
     </task>
     <servers />
   </component>
