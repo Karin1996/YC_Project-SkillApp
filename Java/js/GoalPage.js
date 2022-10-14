@@ -14,7 +14,7 @@ function getAllGoals() {
             {
                 console.log(values.image.imageCode);
             data1+=`<div class="tile">
-                <img class="img_goal" src="${values.image.imageCode}" alt="default_image" width="50" height="300">
+                <img class="img_goal" src="${values.image.imageCode}" alt="default_image">
                 <h3 id="goal">${values.nameOfGoal}</h3>
                 <h3 id="points">points: 3</h3>
             </div>`
