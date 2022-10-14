@@ -15,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -33,12 +33,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Java/Assets" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -62,7 +59,7 @@
       <recent name="C:\WERK\YC_Project-SkillApp\c#\Assets" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/YC_Project-SkillApp/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -96,6 +93,12 @@
       <workItem from="1664949889376" duration="153000" />
       <workItem from="1664953518616" duration="1098000" />
       <workItem from="1664963223537" duration="4492000" />
+      <workItem from="1665384836965" duration="1328000" />
+      <workItem from="1665424904560" duration="625000" />
+      <workItem from="1665473890306" duration="4502000" />
+      <workItem from="1665572947181" duration="1394000" />
+      <workItem from="1665645515877" duration="1707000" />
+      <workItem from="1665734740838" duration="1147000" />
     </task>
     <servers />
   </component>

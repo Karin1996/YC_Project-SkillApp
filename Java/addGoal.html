@@ -10,6 +10,7 @@
   <script src="../Java/js/nav.js" defer></script>
   <script type="text/javascript" src="../Java/js/addGoal.js"></script>
 
+
   <title>Add Goal</title>
 </head>
 <body>
@@ -23,9 +24,11 @@
   </div>
 
   <div class="container">
-    <form onsubmit="addGoal()" class="goal-form" id="form-appear" action="">
       <label for="name-of-goal">Name of Goal</label>
       <input type="text" id="name-of-goal" placeholder="Name of Goal">
+
+    
+  
 
       <label for="description">Description of Goal</label>
       <textarea id="description" placeholder="Description of Goal"></textarea>
@@ -45,15 +48,13 @@
 
       <label for="goal-image">
         Add image
-        <input type="file" name="goal-image" id="goal-image" onChange="handleImageChange()"/>
-        <label/>
+        <input type="file" name="goal-image" id="goal-image" onchange="uploadImage()"/>
         <img src="" alt="" className="image-preview"/>
       </label>
 
       <br>
 
-      <button class="make-goal">Upload your Goal</button>
-    </form>
+      <button class="make-goal" onclick="addGoal()">Upload your Goal</button>
   </div>
 </main>
 
