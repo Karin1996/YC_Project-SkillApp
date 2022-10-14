@@ -19,6 +19,14 @@ function getAllGoals() {
                 <h3 id="points">points: 3</h3>
             </div>`
             }
+            else
+            {
+                data1+=`<div class="tile">
+                <img class="img_goal" src="../Java/Assets/goals.jpg" alt="default_image">
+                <h3 id="goal">${values.nameOfGoal}</h3>
+                <h3 id="points">points: 3</h3>
+            </div>`
+            }
         });
         document.getElementById('all-goals').innerHTML=data1;
     }).catch((err)=>{
