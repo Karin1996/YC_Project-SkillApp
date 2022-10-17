@@ -1,0 +1,15 @@
+.single-goal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#image {
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+}
+
+#description {
+    margin: 20px;
+}
