@@ -14,13 +14,12 @@
     <!--    Gelinkte javascript files -->
     <script src="../Java/js/nav.js" defer></script>
     <script type="text/javascript" src="../Java/js/profile.js"></script>
-    <script type="text/javascript" src="../Java/js/GoalPage.js"></script>
-    <script> getUser(); </script>
+    <script type="text/javascript" src="../Java/js/GoalDetail.js"></script>
 
 
     <title>Goal Page</title>
 </head>
-<body onload="getAllGoals()">
+<body onload="haalGoalDetailOp()">
 <script src="nav_menu.js"></script>
 
 <main>
@@ -35,14 +34,17 @@
         </div>
     </div>
 
-    <h4>All Goals</h4>
+    <h4>Goal...</h4>
     <div class="line"></div>
 
-    <div id="all-goals" class="display_goals">
+    <div class="single-goal">
         <div class="tile">
-            <h3 id="goal">Display all goals</h3>
+            <img id="image" src="./Assets/play_guitar.jpg" alt="">
+            <h3 id="singleGoal">Display single goal here</h3>
+            <h3>point: 3</h3>
         </div>
     </div>
+
 
 </main>
 
