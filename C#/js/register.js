@@ -67,10 +67,7 @@ function serverRequest(json){
         body: json
     })
     .then((response) => response.json())
-    .then((response) => {
-
-        console.log(response)
-       
+    .then((response) => {       
             let wordUsername = "UserName";
             let wordEmail = "Email";
 

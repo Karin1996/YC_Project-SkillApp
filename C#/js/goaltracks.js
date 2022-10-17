@@ -17,7 +17,6 @@ function serverRequest(){
     })
     .then((response) => response.json())
     .then((response) => {
-        console.log(response);
         generateTracks(response);
     })
 }
@@ -33,12 +32,11 @@ function generateTracks(json){
     else{
         let content = "";
         json.forEach(element => {
-            console.log(element);
             //Foreach element create a div (TODO: Add image)
             let divElement = `     
             <div>
                 <img class="goal_thumb" src="assets/water2.jpg" alt="goal_thumb">
-                <a href="#"><span>`+element.name+`</span></a>
+                <a href="goal.html?id=`+element.id+`"><span>`+element.name+`</span></a>
             </div>
              `;
             content += divElement;
