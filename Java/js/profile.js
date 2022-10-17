@@ -33,11 +33,23 @@ function getGoals() {
         console.log(goals.goal[0].nameOfGoal);
         let data1="";
         goals.goal.map((values)=>{
+            if (values.image != null)
+            {
+                console.log(values.image.imageCode);
             data1+=`<div class="tile">
+                <img class="img_goal" src="${values.image.imageCode}" alt="default_image" width="50" height="300">
+                <h3 id="goal">${values.nameOfGoal}</h3>
+                <h3 id="points">points: 3</h3>
+            </div>`
+            }
+            else
+            {
+                data1+=`<div class="tile">
                 <img class="img_goal" src="../Java/Assets/goals.jpg" alt="default_image">
                 <h3 id="goal">${values.nameOfGoal}</h3>
                 <h3 id="points">points: 3</h3>
             </div>`
+            }
         });
         document.getElementById('user_active_goals').innerHTML=data1;
     }).catch((err)=>{
