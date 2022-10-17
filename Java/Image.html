@@ -10,14 +10,14 @@
     <input type="file" name="image" id="image" />
     <button type="button" onclick="uploadImage()">Do iets</button>
     <button type="button" onclick="loadImage()">Show me the money</button><br>
-    <img src="" id="pokahontas" />
+    <img src="" id="pokahontas" alt="laat deze foto zien!" />
     <script>
 
       function getBase64(file) {
         
         let imageObj = {};
         // Filereader kan voor ons de file input uitlezen
-        var reader = new FileReader();
+        let reader = new FileReader();
         reader.readAsDataURL(file);
         // Op het moment dat de file is geladen voer deze function uit
         reader.onload = function () {
@@ -59,9 +59,12 @@
   function loadImage() {
         fetch(`http://localhost:8082/image/71`)
   .then((response) => {console.log(response);
-  return response.blob();
+  return response.json();
   }).then(imgBlob => {console.log(imgBlob);
-  document.getElementById('pokahontas').src = URL.createObjectURL(imgBlob.imageCode);
+
+    console.log(imgBlob.imageCode);
+  document.getElementById('pokahontas').src = imgBlob.imageCode;
+
   })
 
 }

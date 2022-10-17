@@ -1,20 +1,30 @@
 /*Navigation css*/
 nav {
     height: 100vh;
-    background-color: gray;
-    padding: 20px;
     width: 100px;
     float: left;
     position: sticky;
     top:0;
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 6px 20px rgba(18, 65, 73, 0.5);
+    padding: 2rem 2rem;
+    transition: 200ms;
 }
 nav #hamburger{
     width: 36px;
     height: 36px;
     font-size: 32px;
+    background-image: url("../assets/hamburger.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    transition: 200ms;
 }
 nav span {
-    visibility: hidden;
+    display: none;
 }
 
 menu {
@@ -23,8 +33,7 @@ menu {
     margin-bottom: 42px;
 }
 li{
-    margin-top: 12px;
-    
+    margin-top: 12px;    
 }
 nav li > a, nav div > a, #hamburger{
     display: inline-block;
@@ -35,9 +44,23 @@ a {
     line-height: 32px;
     height: 32px;
     text-decoration: none;
+    color: white;
+    font-family: "poppinsRegular", sans-serif;
 }
 a img {
     width: 32px;
     float: left;
     margin-right: 18px;
+    transition: 100ms;
+}
+
+#logout_div{
+    position: absolute;
+    bottom: 2rem;
+}
+
+#logout_div a {
+    margin-top: 12px;  
+    width: 100%;
+    display: inline-block;
 }
