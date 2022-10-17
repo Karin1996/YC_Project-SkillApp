@@ -4,13 +4,17 @@ function haalGoalDetailOp() {
     var paramValue = url.searchParams.get("deGoalId");
     console.log(paramValue)
 
-    fetch(`http://localhost:8082/goals/id/${paramValue}`)
+    fetch(`https://javabackend.azurewebsites.net/goals/id/${paramValue}`)
         .then((data)=>{
             console.log(data);
             return data.json();
         }).then((goaldata)=>{
-        document.getElementById('singleGoal')
+        document.getElementById('goalTitle')
             .innerHTML=goaldata.nameOfGoal;
+        document.getElementById('image')
+            .src = goaldata.image.imageCode;
+        document.getElementById('goal-description')
+            .innerHTML=goaldata.description
     }).catch((err)=>{
         console.log(err)
     })

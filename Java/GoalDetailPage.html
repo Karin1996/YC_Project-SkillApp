@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/HomePage.css">
     <link rel="stylesheet" href="css/TopBar.css">
+    <link rel="stylesheet" href="css/GoalDetail.css">
 
     <!--    Gelinkte javascript files -->
     <script src="../Java/js/nav.js" defer></script>
     <script type="text/javascript" src="../Java/js/profile.js"></script>
     <script type="text/javascript" src="../Java/js/GoalDetail.js"></script>
+    <script>getUser()</script>
 
 
     <title>Goal Page</title>
@@ -34,15 +36,12 @@
         </div>
     </div>
 
-    <h4>Goal...</h4>
+    <h4 id="goalTitle">Goal title..</h4>
     <div class="line"></div>
 
     <div class="single-goal">
-        <div class="tile">
             <img id="image" src="./Assets/play_guitar.jpg" alt="">
-            <h3 id="singleGoal">Display single goal here</h3>
-            <h3>point: 3</h3>
-        </div>
+            <p id="goal-description">Goal description..</p>
     </div>
 
 
