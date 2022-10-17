@@ -31,7 +31,7 @@ function generateJSON(){
 
 function serverRequest(json){
     console.log("Wowzerts");
-    fetch("http://localhost:8082/users", { headers: {
+    fetch("http://https://javabackend.azurewebsites.net/users", { headers: {
 
             'Content-Type': 'application/json'}, method: 'POST', body: json})
         .then((response) => response.json())
