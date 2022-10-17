@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../general.css">
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <script>
+        if(localStorage.getItem("userInfo_id")){
+            window.location.href = "dashboard.html";
+        }
+    </script>
     <title>Skill App</title>
 </head>
 <body>
@@ -16,7 +21,8 @@
             <h1>Skill App</h1>
             <ul>
                 <li><a href="signin.html">Login</a></li>
-                <li><a href="#">Library</a></li>
+                <li><a href="https://mvs.outsystemscloud.com/MySkillsTools/">Library</a></li>
+                <li><a href="https://yc2209-bigdataflask.azurewebsites.net/">Quiz</a></li>
             </ul>
         </header>
 

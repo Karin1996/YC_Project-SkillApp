@@ -8,11 +8,9 @@ function getAccountInfo() {
             return data.json();
         }).then((userdata)=>{
              console.log("Ophalen account info met id: " + userdata.id);
-             document.getElementById('kiwi')
-                 .innerHTML=userdata.name;
              document.getElementById('name')
                  .value=userdata.name;
-             document.getElementById('username')
+             document.getElementById('user-name')
                  .value=userdata.username;
              document.getElementById('email')
                  .value=userdata.email;
@@ -36,7 +34,7 @@ function updateJSON(){
 
     //Get the name and password from the input fields
     let inputName = document.getElementById("name").value;
-    let inputUserName = document.getElementById("username").value;
+    let inputUserName = document.getElementById("user-name").value;
     let inputEmail = document.getElementById("email").value;
     let inputPassword = document.getElementById("password").value;
     let inputLocation = document.getElementById("location").value;
