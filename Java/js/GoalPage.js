@@ -21,7 +21,7 @@ function getAllGoals() {
             }
             else
             {
-                data1+=`<div class="tile">
+                data1+=`<div class="tile" onclick="getGoal(${values.id})">
                 <img class="img_goal" src="../Java/Assets/goals.jpg" alt="default_image">
                 <h3 id="goal">${values.nameOfGoal}</h3>
                 <h3 id="points">points: 3</h3>
@@ -44,4 +44,8 @@ return response.json();
 console.log(imgBlob.imageCode);
 document.getElementById('mulan').src = imgBlob.imageCode;
 })
+}
+
+function getGoal(goalId) {
+    location.href = "../Java/GoalDetailPage.html?deGoalId="+goalId;
 }
