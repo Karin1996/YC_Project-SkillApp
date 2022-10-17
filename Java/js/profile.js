@@ -2,7 +2,7 @@ let userId = localStorage.getItem("keyId")
 
 function getUser() {
 
-    fetch(`http://localhost:8082/users/id/${userId}`)
+    fetch(`http://https://javabackend.azurewebsites.net/users/id/${userId}`)
         .then((data)=>{
             console.log(data);
             return data.json();
@@ -26,7 +26,7 @@ function logout() {
 
 function getGoals() {
 
-    fetch(`http://localhost:8082/users/id/${userId}`)
+    fetch(`http://https://javabackend.azurewebsites.net/users/id/${userId}`)
         .then((data)=>{
             return data.json();
     }).then((goals)=>{

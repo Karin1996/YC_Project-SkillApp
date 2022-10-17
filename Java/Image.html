@@ -36,7 +36,7 @@
 
       function serverRequest(json){
     console.log("Wowzerts");
-    fetch("http://localhost:8082/image", { headers: {
+    fetch("http://https://javabackend.azurewebsites.net/image", { headers: {
 
             'Content-Type': 'application/json'}, method: 'POST', body: json})
         .then((response) => response.json())
@@ -57,7 +57,7 @@
 
 
   function loadImage() {
-        fetch(`http://localhost:8082/image/71`)
+        fetch(`http://https://javabackend.azurewebsites.net/image/71`)
   .then((response) => {console.log(response);
   return response.json();
   }).then(imgBlob => {console.log(imgBlob);
