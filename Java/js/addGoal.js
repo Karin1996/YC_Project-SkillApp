@@ -1,9 +1,5 @@
-
-
 let goalObj = {};
 function addGoal(){
-
-    
 
     //Get the name and password from the input fields
     let goalName = document.getElementById("name-of-goal").value;
@@ -17,7 +13,8 @@ function addGoal(){
         const goalJSON = JSON.stringify(goalObj);
   //      console.log(imageObj);
 
-        goalRequest(goalJSON);
+        goalRequest(goalJSON)
+
     }
 
 function goalRequest(json){
@@ -26,8 +23,13 @@ function goalRequest(json){
     fetch("https://javabackend.azurewebsites.net/goals", { headers: {
 
             'Content-Type': 'application/json'}, method: 'POST', body: json})
+        .then(goToGoalPage)
         // .then((response) => response.json())
         // .then((data) => console.log(data));
+}
+
+function goToGoalPage() {
+    location.href = "../Java/GoalPage.html";
 }
 
 

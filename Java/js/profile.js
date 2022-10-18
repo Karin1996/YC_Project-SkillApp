@@ -35,19 +35,18 @@ function getGoals() {
         goals.goal.map((values)=>{
             if (values.image != null)
             {
-                console.log(values.image.imageCode);
-            data1+=`<div class="tile">
+            data1+=`<div class="tile" onclick="getGoal(${values.id})">
                 <img class="img_goal" src="${values.image.imageCode}" alt="default_image" width="50" height="300">
                 <h3 id="goal">${values.nameOfGoal}</h3>
-                <h3 id="points">points: 3</h3>
+                <button id="learn">Learn this!</button>
             </div>`
             }
             else
             {
-                data1+=`<div class="tile">
+                data1+=`<div class="tile" onclick="getGoal(${values.id})">
                 <img class="img_goal" src="../Java/Assets/goals.jpg" alt="default_image">
                 <h3 id="goal">${values.nameOfGoal}</h3>
-                <h3 id="points">points: 3</h3>
+                <button id="learn">Learn this!</button>
             </div>`
             }
         });
@@ -55,5 +54,7 @@ function getGoals() {
     }).catch((err)=>{
         console.log(err)
     })
+}function getGoal(goalId) {
+    location.href = "../Java/GoalDetailPage.html?deGoalId="+goalId;
 }
 
