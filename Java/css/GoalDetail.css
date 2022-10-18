@@ -1,15 +1,43 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .single-goal {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 20px;
 }
 
+.single-goal p {
+
+}
+
 #image {
-    width: 500px;
-    height: 250px;
+    width: 450px;
+    height: 300px;
     object-fit: cover;
 }
 
 #description {
     margin: 20px;
+}
+
+/*button van goalpage.html*/
+#learn {
+    font-size: 1em;
+    padding: 5px 10px;
+    background-color: rgb(176,217,128);
+    text-transform: uppercase;
+    border: none;
+    font-weight: 500;
+    margin: 10px;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+#learn:hover {
+    letter-spacing: 6px;
 }

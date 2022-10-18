@@ -36,7 +36,6 @@ function serverRequest(json){
             'Content-Type': 'application/json'}, method: 'POST', body: json})
         .then((response) => response.json())
         .then((data) => console.log(data));
-
 }
 
 function checkPasswordMatch(passwordOne, passwordTwo){
