@@ -67,10 +67,7 @@ function serverRequest(json){
         body: json
     })
     .then((response) => response.json())
-    .then((response) => {
-
-        console.log(response)
-       
+    .then((response) => {       
             let wordUsername = "UserName";
             let wordEmail = "Email";
 
@@ -91,7 +88,8 @@ function serverRequest(json){
             }
     })
     .catch(error =>{
-        console.log("not getting a response");
+        document.getElementById("message").style.color = "rgb(224, 67, 114)";
+        document.getElementById("message").innerText = "An error has occured, try again";
     })
 }
 
