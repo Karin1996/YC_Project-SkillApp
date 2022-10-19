@@ -27,9 +27,11 @@ function menuOpen(open){
         nav.style.width = closedWidth;
         main.style.width = 100% - closedWidth;
 
+     
         for(let i=0; i < spans.length; i++){
-           spans[i].style.display = "none";
+            spans[i].style.display = "none";            
         }
+        
     }
     //menu is closed, open it
     else{
@@ -39,8 +41,10 @@ function menuOpen(open){
         nav.style.width = openWidth + "px";
         main.style.width = 100% - (openWidth + "px");
 
-        for(let i=0; i < spans.length; i++){
-            spans[i].style.display = "inline-block";
-        }
+        setTimeout(function(){
+            for(let i=0; i < spans.length; i++){
+                spans[i].style.display = "inline-block";
+             }
+        }, 150)
     }
 }

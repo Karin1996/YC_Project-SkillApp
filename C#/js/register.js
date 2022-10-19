@@ -88,7 +88,8 @@ function serverRequest(json){
             }
     })
     .catch(error =>{
-        console.log("not getting a response");
+        document.getElementById("message").style.color = "rgb(224, 67, 114)";
+        document.getElementById("message").innerText = "An error has occured, try again";
     })
 }
 

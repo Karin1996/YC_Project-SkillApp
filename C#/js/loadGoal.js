@@ -17,8 +17,6 @@ function serverRequest(){
     })
     .then((response) => response.json())
     .then((response) => {
-        console.log("res", response);
-        console.log("res2", response.goal);
         generateGoalInfo(response);
     })
     .catch(error =>{
@@ -32,32 +30,32 @@ function serverRequest(){
 
 
 function generateGoalInfo(json){
+    //Calculate totalpoints (from subgoal individual Points)
+    let totalPoints = 0;
+    json.subgoal.forEach(element => {
+        totalPoints += element.Points
+    })
+    
     let content = `
         <a class="button white_button" href="#" onclick=addGoalToUser()>Add goal</a>
 
         <h2>`+json.goal.Name+`</h2>
+        <h4>Points: 0 - `+totalPoints+`</h4>
+
         <p>`+json.goal.Description+`</p>
         <h3>Subgoals for `+json.goal.Name+`</h3>
 
-        <div class="user_active_goals">
-                        <div>
-                <img class="goal_thumb" src="assets/water2.jpg" alt="goal_thumb">
-                <a href="#"><span>[subgoal 2]</span></a>
-            </div>
-            <div>
-                <img class="goal_thumb" src="assets/water2.jpg" alt="goal_thumb">
-                <a href="#"><span>[subgoal 3]</span></a>
-            </div>
-        </div>
+        <div class="user_active_goals">No subgoals</div>
     `;
 
     let innerContent = "";
+    
     json.subgoal.forEach(element => {
         //Foreach element create a div
         let divElement = `     
         <div>
             <img class="goal_thumb" src="assets/water2.jpg" alt="goal_thumb">
-            <a data_goalId="`+json.goal.Id+`" href="subgoal.html"><span>`+element.name+`</span></a>
+            <a href="subgoal.html?id=`+element.Id+`"><span>`+element.Name+`</span></a>
         </div>
             `;
         innerContent += divElement;

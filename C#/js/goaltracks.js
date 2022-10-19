@@ -32,10 +32,11 @@ function generateTracks(json){
     else{
         let content = "";
         json.forEach(element => {
+            console.log(element);
             //Foreach element create a div (TODO: Add image)
             let divElement = `     
             <div>
-                <img class="goal_thumb" src="assets/water2.jpg" alt="goal_thumb">
+                <img class="goal_thumb" src="assets/goal_images/`+element.fileName+`.jpg" alt="goal_thumb" onerror="this.onerror=null;this.src='assets/goal_images/default.jpg';">
                 <a href="goal.html?id=`+element.id+`"><span>`+element.name+`</span></a>
             </div>
              `;
@@ -47,3 +48,6 @@ function generateTracks(json){
     }
 
 }
+
+
+/*  */

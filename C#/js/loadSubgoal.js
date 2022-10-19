@@ -8,7 +8,7 @@ function requestGoal(e){
 }
 
 function serverRequest(){
-    fetch(urlVar+"/api/Goal/getGoal/"+location.search.split('id=')[1]+"/getSubgoal/"+location.search.split('subid=')[1], {
+    fetch(urlVar+"/api/SubGoal/getSubGoal/"+location.search.split('id=')[1], {
         method: "GET",
         headers: {
             "Accept": "application/json",
@@ -17,10 +17,10 @@ function serverRequest(){
     })
     .then((response) => response.json())
     .then((response) => {
-        console.log(response);
-
-        console.log(response.goal);
-        generateGoalInfo(response);
+        //console.log("res", response);
+        //console.log("res2", response.goal);
+        console.log("response", response);
+        generateSubGoalInfo(response);
     })
     .catch(error =>{
         let msg = document.createElement("p");
@@ -31,9 +31,16 @@ function serverRequest(){
     })
 }
 
+function generateSubGoalInfo(json){
+    let content = `
+        <a class="button white_button" href="#" onclick=addGoalToUser()>Complete subgoal</a>
 
-function generateGoalInfo(json){
-   //Generate pageinfo here
+        <h2><a href=goal.html?id=`+json.goal.Id+`>`+json.goal.Name+`</a> > `+json.subgoal.Name+`</h2>
+        <h4>Points: `+json.subgoal.Points+`</h4>
 
-    //if(document.getElementsByTagName("main")[0]){document.getElementsByTagName("main")[0].innerHTML = content};
+        <p>`+json.subgoal.Description+`</p>
+    `;
+    
+
+    if(document.getElementsByTagName("main")[0]){ document.getElementsByTagName("main")[0].innerHTML = content; };
 }
