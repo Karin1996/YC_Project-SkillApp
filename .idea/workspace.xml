@@ -4,8 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="a05f2ce7-e99f-4629-a445-4beb94acdd74" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Java/css/GoalDetail.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/GoalDetailPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Java/GoalDetailPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/GoalDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/GoalDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/GoalPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/GoalPage.js" afterDir="false" />
+=======
+    <list default="true" id="3dfebc2c-101b-4b0b-9123-e28c69fa6613" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/Image.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/Image.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/accountinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/accountinfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/addGoal.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/addGoal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/signin.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/signin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/js/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/Java/js/signup.js" afterDir="false" />
+>>>>>>> main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -33,9 +48,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -59,7 +76,7 @@
       <recent name="C:\WERK\YC_Project-SkillApp\c#\Assets" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/YC_Project-SkillApp/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -98,7 +115,9 @@
       <workItem from="1665473890306" duration="4502000" />
       <workItem from="1665572947181" duration="1394000" />
       <workItem from="1665645515877" duration="1707000" />
-      <workItem from="1665734740838" duration="1147000" />
+      <workItem from="1665734740838" duration="12381000" />
+      <workItem from="1665827350789" duration="2676000" />
+      <workItem from="1665990621601" duration="10856000" />
     </task>
     <servers />
   </component>

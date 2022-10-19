@@ -1,9 +1,5 @@
-
-
 let goalObj = {};
 function addGoal(){
-
-    
 
     //Get the name and password from the input fields
     let goalName = document.getElementById("name-of-goal").value;
@@ -17,17 +13,23 @@ function addGoal(){
         const goalJSON = JSON.stringify(goalObj);
   //      console.log(imageObj);
 
-        goalRequest(goalJSON);
+        goalRequest(goalJSON)
+
     }
 
 function goalRequest(json){
     console.log("goalsssFELIX");
     console.log(json);
-    fetch("http://localhost:8082/goals", { headers: {
+    fetch("https://javabackend.azurewebsites.net/goals", { headers: {
 
             'Content-Type': 'application/json'}, method: 'POST', body: json})
+        .then(goToGoalPage)
         // .then((response) => response.json())
         // .then((data) => console.log(data));
+}
+
+function goToGoalPage() {
+    location.href = "../Java/GoalPage.html";
 }
 
 
@@ -57,7 +59,7 @@ function getBase64(file) {
 
   function serverRequest(json){
 //console.log("Wowzerts");
-fetch("http://localhost:8082/image", { headers: {
+fetch("https://javabackend.azurewebsites.net/image", { headers: {
 
         'Content-Type': 'application/json'}, method: 'POST', body: json})
     .then((response) => response.json())
@@ -78,7 +80,7 @@ fetch("http://localhost:8082/image", { headers: {
 
 
 function loadImage() {
-    fetch(`http://localhost:8082/image/73`)
+    fetch(`https://javabackend.azurewebsites.net/image/73`)
 .then((response) => {console.log(response);
 return response.json();
 }).then(imgBlob => {console.log(imgBlob);

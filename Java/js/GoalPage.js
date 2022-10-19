@@ -1,10 +1,9 @@
 function getAllGoals() {
 
-    fetch(`http://localhost:8082/goals`)
+    fetch(`https://javabackend.azurewebsites.net/goals`)
         .then((data)=>{
             return data.json();
         }).then((goals)=>{
-        //console.log(goals);
         let data1="";
         goals.map((values)=>{
            
@@ -12,19 +11,18 @@ function getAllGoals() {
             //loadImage(values.image);
             if (values.image != null)
             {
-                console.log(values.image.imageCode);
-            data1+=`<div class="tile">
-                <img class="img_goal" src="${values.image.imageCode}" alt="default_image" width="50" height="300">
-                <h3 id="goal">${values.nameOfGoal}</h3>
-                <h3 id="points">points: 3</h3>
+            data1+=`<div class="tile" onclick="getGoal(${values.id})">
+                <img class="img_goal" src="${values.image.imageCode}" alt="default_image">
+                <h2 id="goal">${values.nameOfGoal}</h2>
+                <button id="learn">Learn this!</button>
             </div>`
             }
             else
             {
-                data1+=`<div class="tile">
+                data1+=`<div class="tile" onclick="getGoal(${values.id})">
                 <img class="img_goal" src="../Java/Assets/goals.jpg" alt="default_image">
-                <h3 id="goal">${values.nameOfGoal}</h3>
-                <h3 id="points">points: 3</h3>
+                <h2 id="goal">${values.nameOfGoal}</h2>
+                <button id="learn">Learn this!</button>
             </div>`
             }
         });
@@ -37,11 +35,15 @@ function getAllGoals() {
 
 function loadImage(idImage) {
     console.log("dit is de id: " + idImage);
-    fetch(`http://localhost:8082/image/${imageId}`)
+    fetch(`https://javabackend.azurewebsites.net/image/${imageId}`)
 .then((response) => {console.log(response);
 return response.json();
 }).then(imgBlob => {console.log(imgBlob);
 console.log(imgBlob.imageCode);
 document.getElementById('mulan').src = imgBlob.imageCode;
 })
+}
+
+function getGoal(goalId) {
+    location.href = "../Java/GoalDetailPage.html?deGoalId="+goalId;
 }

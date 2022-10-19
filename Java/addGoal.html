@@ -4,31 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--    gelinkte stylesheets CSS -->
   <link rel="stylesheet" href="css/profile.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/HomePage.css">
+  <link rel="stylesheet" href="css/TopBar.css">
+
+    <!--    Gelinkte javascript files -->
   <script src="../Java/js/nav.js" defer></script>
+  <script type="text/javascript" src="../Java/js/profile.js"></script>
   <script type="text/javascript" src="../Java/js/addGoal.js"></script>
 
 
   <title>Add Goal</title>
 </head>
-<body>
-
+<body onload="getUser()">
 <script src="nav_menu.js"></script>
 
 <main>
-  <div class="welcome">
-    <h1>Add Goal</h1>
-    <h1 id="kiwi"></h1>
-  </div>
+    <div class="top-bar">
+        <div class="horizontal">
+            <h1>Hi!</h1>
+            <h1 id="username"></h1>
+        </div>
+        <div>
+            <a href="profile.html">Dashboard</a>
+            <a href="GoalPage.html">All Goals</a>
+        </div>
+    </div>
 
   <div class="container">
       <label for="name-of-goal">Name of Goal</label>
       <input type="text" id="name-of-goal" placeholder="Name of Goal">
-
-    
-  
 
       <label for="description">Description of Goal</label>
       <textarea id="description" placeholder="Description of Goal"></textarea>
@@ -52,10 +60,9 @@
         <img src="" alt="" className="image-preview"/>
       </label>
 
-      <br>
-
       <button class="make-goal" onclick="addGoal()">Upload your Goal</button>
   </div>
+
 </main>
 
 </body>

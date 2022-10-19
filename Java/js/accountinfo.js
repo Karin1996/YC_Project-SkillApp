@@ -1,18 +1,16 @@
-let userId = localStorage.getItem("keyId")
 
 
 function getAccountInfo() {
-    fetch(`http://localhost:8082/users/id/${userId}`)
+let userId = localStorage.getItem("keyId")
+    fetch(`https://javabackend.azurewebsites.net/users/id/${userId}`)
         .then((data)=>{
             console.log(data);
             return data.json();
         }).then((userdata)=>{
              console.log("Ophalen account info met id: " + userdata.id);
-             document.getElementById('kiwi')
-                 .innerHTML=userdata.name;
              document.getElementById('name')
                  .value=userdata.name;
-             document.getElementById('username')
+             document.getElementById('user-name')
                  .value=userdata.username;
              document.getElementById('email')
                  .value=userdata.email;
@@ -30,19 +28,22 @@ function getAccountInfo() {
 
 
 function updateJSON(){
-    console.log("TESTING 1");
+    console.log("in updateJSON");
 
     let accountObj = {};
 
     //Get the name and password from the input fields
+        console.log("data van velden ophalen");
     let inputName = document.getElementById("name").value;
-    let inputUserName = document.getElementById("username").value;
+    let inputUserName = document.getElementById("user-name").value;
     let inputEmail = document.getElementById("email").value;
     let inputPassword = document.getElementById("password").value;
     let inputLocation = document.getElementById("location").value;
     let inputExpert = document.getElementById("expert").value;
+        console.log("ophalen gelukt");
 
     //add values to the object
+    accountObj.id = localStorage.getItem("keyId");
     accountObj.name = inputName;
     accountObj.username = inputUserName;
     accountObj.email = inputEmail;
@@ -52,16 +53,16 @@ function updateJSON(){
 
     //convert the object into a JSON file
     const meloenJSON = JSON.stringify(accountObj);
-    console.log("geupdate versie account informatie: " + meloenJSON);
+    console.log("met deze data gaan we de oude informatie updaten: " + meloenJSON);
     serverRequestUpdate(meloenJSON);
 }
 
 function serverRequestUpdate(json){
     console.log("in de functie serverRequest(json)");
-    fetch(`http://localhost:8082/users/1`, { headers: {
-
-            'Content-Type': 'application/json'}, method: 'PUT', body: json})
+    fetch(`https://javabackend.azurewebsites.net/users/update/${userId}/`,
+        {headers: {'Content-Type': 'application/json'}, method: 'PUT', body: json})
         .then((response) => response.json())
         .then((data) => console.log(data));
+        console.log("einde serverRequestUpdate(json)");
 
 }

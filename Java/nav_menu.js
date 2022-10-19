@@ -4,7 +4,7 @@ let nav_menu = `
     <div id="hamburger"><img class="burger" src="./Assets/hamburger.png" alt=""></div>
 
     <menu>
-        <li><a href="./profile.html"> <span>Home</span> </a></li>
+        <li><a href="./profile.html"> <span>Dashboard</span> </a></li>
         <li><a href="./addGoal.html"> <span>Make a Goal</span> </a></li>
     </menu>
 
@@ -15,7 +15,7 @@ let nav_menu = `
     </menu>
     
     <menu>
-        <li><a href="./accountinfo.html"> <span>Account settings</span> </a></li>
+        <li><a href="./accountinfo.html"> <span>User settings</span> </a></li>
         <div onclick="logout()"> <span>logout</span>  </div>
     </menu>
 </nav>
