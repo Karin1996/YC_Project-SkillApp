@@ -20,7 +20,7 @@ function addGoal(){
 function goalRequest(json){
     console.log("goalsssFELIX");
     console.log(json);
-    fetch("https://javabackend.azurewebsites.net/goals", { headers: {
+    fetch("http://localhost:8082/goals", { headers: {
 
             'Content-Type': 'application/json'}, method: 'POST', body: json})
         .then(goToGoalPage)
@@ -59,7 +59,7 @@ function getBase64(file) {
 
   function serverRequest(json){
 //console.log("Wowzerts");
-fetch("https://javabackend.azurewebsites.net/image", { headers: {
+fetch("http://localhost:8082/image", { headers: {
 
         'Content-Type': 'application/json'}, method: 'POST', body: json})
     .then((response) => response.json())
@@ -80,7 +80,7 @@ fetch("https://javabackend.azurewebsites.net/image", { headers: {
 
 
 function loadImage() {
-    fetch(`https://javabackend.azurewebsites.net/image/73`)
+    fetch(`http://localhost:8082/image/73`)
 .then((response) => {console.log(response);
 return response.json();
 }).then(imgBlob => {console.log(imgBlob);
