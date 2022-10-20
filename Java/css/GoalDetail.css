@@ -9,10 +9,11 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    width: 50%;
 }
 
 .single-goal p {
-
+    margin-top: 10px;
 }
 
 #image {
