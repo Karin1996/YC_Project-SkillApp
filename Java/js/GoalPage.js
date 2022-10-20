@@ -1,6 +1,6 @@
 function getAllGoals() {
 
-    fetch(`https://javabackend.azurewebsites.net/goals`)
+    fetch(`http://localhost:8082/goals`)
         .then((data)=>{
             return data.json();
         }).then((goals)=>{
@@ -35,7 +35,7 @@ function getAllGoals() {
 
 function loadImage(idImage) {
     console.log("dit is de id: " + idImage);
-    fetch(`https://javabackend.azurewebsites.net/image/${imageId}`)
+    fetch(`http://localhost:8082/image/${imageId}`)
 .then((response) => {console.log(response);
 return response.json();
 }).then(imgBlob => {console.log(imgBlob);
