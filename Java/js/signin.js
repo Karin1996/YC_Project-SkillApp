@@ -42,8 +42,6 @@ function skipLogin()
          document.getElementById('username')
              .innerHTML=userdata.name;
              location.href = "../Java/profile.html";
-         getGoals();
-         console.log(getGoals())
 }).catch((err)=>{
     console.log(err)
 })
