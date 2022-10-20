@@ -1,0 +1,60 @@
+main {
+    align-items: baseline;
+    padding: 0rem 3rem;
+}
+
+main h2{
+ text-align: left;
+}
+
+main p.msg{
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 6px 20px rgba(18, 65, 73, 0.5);
+    border-radius: 4px;
+    padding: 2rem 2rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+main div.user_active_goals{
+    min-width: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+main div.user_active_goals div{
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+}
+/* main div.user_active_goals div:last-child{
+    width: 10rem;
+    height: 10rem;
+}
+main div.user_active_goals div:last-child a {
+    width: 10rem;
+    height: 10rem;
+} */
+main div.user_active_goals a {
+    justify-content: center;
+    width: 8rem;
+    height: 8rem;
+}
+
+main a.button {
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    line-height: 15px;
+    height: 36px;
+    padding: 0.5rem 1rem;
+}
+
+h2 a {
+    color: rgba(255, 255, 255, 0.7);
+}
