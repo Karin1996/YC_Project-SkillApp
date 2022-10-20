@@ -55,6 +55,10 @@ main a.button {
     padding: 0.5rem 1rem;
 }
 
+main a.discord {
+    right: 12.5rem;
+}
+
 h2 a {
     color: rgba(255, 255, 255, 0.7);
 }

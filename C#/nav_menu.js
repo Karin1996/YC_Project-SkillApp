@@ -5,7 +5,7 @@ let nav_menu = `
 
     <menu>
         <li><a href="dashboard.html"><img class="icon" src="assets/dashboard.png" alt="dashboard"> <span> My Dashboard </span> </a></li>
-        <li><a href="goaltracks.html"><img class="icon" src="assets/goal.png" alt="goal"> <span> Search Goals </span> </a></li>
+        <li><a href="goaltracks.html"><img class="icon" src="assets/goal.png" alt="goal"> <span> Search Skills </span> </a></li>
     </menu>
     
     <div id="logout_div" >

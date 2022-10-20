@@ -6,7 +6,7 @@ var paramValue = url.searchParams.get("deGoalId");
 console.log(paramValue)
 
 function haalGoalDetailOp() {
-    fetch(`https://javabackend.azurewebsites.net/goals/id/${paramValue}`)
+    fetch(`http://localhost:8082/goals/id/${paramValue}`)
         .then((data)=>{
             console.log(data);
             return data.json();
@@ -23,7 +23,7 @@ function haalGoalDetailOp() {
 }
 
 function addGoalToDash() {
-    fetch(`https://javabackend.azurewebsites.net/users/${idOfUser}/${paramValue}`, {
+    fetch(`http://localhost:8082/users/${idOfUser}/${paramValue}`, {
         method: 'PUT'
     })
     location.href = "../Java/profile.html";

@@ -84,7 +84,8 @@ main div.user_active_goals div{
 main div.user_active_goals img{
     display: block;
     text-align: center;
-    width: 11rem;
+    min-width: 11rem;
+    max-width: 15rem;
     position: absolute;
     top: 50%;
     left: 50%;

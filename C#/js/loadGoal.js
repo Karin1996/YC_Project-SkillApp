@@ -22,7 +22,7 @@ function serverRequest(){
     .catch(error =>{
         let msg = document.createElement("p");
         msg.classList.add("msg");
-        msg.innerHTML = "This goal has no information";
+        msg.innerHTML = "This skill has no information";
         document.getElementsByTagName("main")[0].style.alignItems = "center";
         document.getElementsByTagName("main")[0].append(msg);
     })
@@ -37,6 +37,7 @@ function generateGoalInfo(json){
     })
     
     let content = `
+        <a class="button white_button discord" href="https://discord.gg/8nKyetykZf" target="_blank">Join the discord</a>
         <a class="button white_button" href="#" onclick=addGoalToUser()>Add goal</a>
 
         <h2>`+json.goal.Name+`</h2>
