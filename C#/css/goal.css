@@ -46,19 +46,41 @@ main div.user_active_goals a {
     height: 8rem;
 }
 
-main a.button {
+main div#button_wrapper{
     position: absolute;
     right: 3rem;
     top: 3rem;
+    width: 15rem;
+    height: auto;
+}
+
+main div a.button{
+    float: right;
+    margin-top: 1rem;
     line-height: 15px;
     height: 36px;
     padding: 0.5rem 1rem;
 }
+main div a.button:first-child{
+    margin-top: 0;
+}
 
-main a.discord {
-    right: 12.5rem;
+
+main div a.following {
+    background-color: rgb(212, 212, 212);
+    border-color: rgb(212, 212, 212);
+    color: #6b7b7e !important;
 }
 
 h2 a {
     color: rgba(255, 255, 255, 0.7);
+}
+ 
+p a{
+    color: #41666D; 
+    background-color: white;
+    padding: 0rem 0.5rem;
+    text-shadow: none;
+    border-radius: 2px;
+    margin: 0 0.2rem;
 }

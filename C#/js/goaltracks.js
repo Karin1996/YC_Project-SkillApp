@@ -25,15 +25,13 @@ function generateTracks(json){
     //There are no goals/tracks in the db
     if(json.length <= 0){
         let msg = document.createElement("p");
-        msg.innerHTML = "There are no goals available";
+        msg.innerHTML = "There are no skills available";
         document.getElementById("all_goals").style.display = "block";
         document.getElementById("all_goals").append(msg);
     }
     else{
         let content = "";
         json.forEach(element => {
-            console.log(element);
-            //Foreach element create a div (TODO: Add image)
             let divElement = `     
             <div>
                 <img class="goal_thumb" src="assets/goal_images/`+element.fileName+`.jpg" alt="goal_thumb" onerror="this.onerror=null;this.src='assets/goal_images/default.jpg';">
@@ -48,6 +46,3 @@ function generateTracks(json){
     }
 
 }
-
-
-/*  */

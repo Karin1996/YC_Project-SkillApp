@@ -17,9 +17,6 @@ function serverRequest(){
     })
     .then((response) => response.json())
     .then((response) => {
-        //console.log("res", response);
-        //console.log("res2", response.goal);
-        console.log("response", response);
         generateSubGoalInfo(response);
     })
     .catch(error =>{
@@ -33,7 +30,9 @@ function serverRequest(){
 
 function generateSubGoalInfo(json){
     let content = `
-        <a class="button white_button" href="#" onclick=addGoalToUser()>Complete subgoal</a>
+        <div id="button_wrapper">
+            <a class="button white_button" href="#">Complete</a>
+        </div>
 
         <h2><a href=goal.html?id=`+json.goal.Id+`>`+json.goal.Name+`</a> > `+json.subgoal.Name+`</h2>
         <h4>Points: `+json.subgoal.Points+`</h4>
