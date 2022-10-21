@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
     width: 50%;
 }
 
@@ -41,4 +40,35 @@
 
 #learn:hover {
     letter-spacing: 6px;
+}
+
+.subs {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.subgoals {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: rgb(139,169,137) solid 1px;
+    padding: 5px;
+}
+
+.btn-sub {
+    font-size: 1rem;
+    padding: 5px;
+    width: 70%;
+    background-color: rgb(139,169,137);
+    text-transform: uppercase;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.btn-sub:hover {
+    letter-spacing: 5px;
 }
