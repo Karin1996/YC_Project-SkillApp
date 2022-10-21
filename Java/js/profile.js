@@ -11,7 +11,6 @@ function getUser() {
              document.getElementById('username')
                  .innerHTML=userdata.name;
              getGoals();
-             console.log(getGoals())
     }).catch((err)=>{
         console.log(err)
     })
