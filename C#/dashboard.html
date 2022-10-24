@@ -14,7 +14,7 @@
     <script src="js/loadUserGoals.js"></script>
     <!--Nav menu javascript, open and close menu -->
     <script src="js/deleteLocalStorage.js" defer></script>
-    <script src="js/nav.js" defer></script>--------
+    <script src="js/nav.js" defer></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -25,12 +25,13 @@
     <!--Main content of logged in pages in here-->
     <main>
 
-        <!--<h2>Welcome,<br> <script>document.write(localStorage.getItem("userInfo_name").replaceAll('"', ''))</script>!</h2>-->
         <h2>Welcome,<br><span id="userInfo_name"></span>!</h2>
         <!-- <img class="icon" src="assets/default_image.png" alt="default_image"> -->
 
         <h3>Your active skills</h3>
-        <div class="user_active_goals" id="user_active_goals"></div>
+        <div class="user_active_goals" id="user_active_goals">
+            <!--Generated in loadUserGoals.js -->
+        </div>
 
     </main>
 

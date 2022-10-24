@@ -1,10 +1,47 @@
+let arr = [];
+
 document.addEventListener("DOMContentLoaded", function(e){
     requestGoal(e)
 });
 
 function requestGoal(e){
     e.preventDefault();
-    serverRequest();
+    
+    let userIdObj = {
+        userId: localStorage.getItem("userInfo_id").toString()
+    };
+
+    //convert the object into a JSON file
+    const userIdJSON = JSON.stringify(userIdObj);
+    serverRequestForId(userIdJSON);
+
+    //wait 1 ms to get back usergoal ids
+    setTimeout(function(){
+        serverRequest();
+    }, 100)
+    
+}
+
+function serverRequestForId(json){
+    fetch(urlVar+"/api/UserGoal/GetGoalsFromUser", {
+        method: "POST",
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+        },
+        body: json
+    })
+    .then((response) => response.json())
+    .then((response) => {
+        makeGoalArray(response);
+    })
+}
+
+//Get the user specific goals, put those goal ids in an array to check against goalId
+function makeGoalArray(json){    
+    for(let i = 0; i < json.length; i++){
+        arr[i] = json[i].id;
+    }
 }
 
 function serverRequest(){
@@ -17,7 +54,7 @@ function serverRequest(){
     })
     .then((response) => response.json())
     .then((response) => {
-        generateGoalInfo(response);
+        setTimeout(function(){generateGoalInfo(response)}, 100);
     })
     .catch(error =>{
         let msg = document.createElement("p");
@@ -28,17 +65,34 @@ function serverRequest(){
     })
 }
 
-
 function generateGoalInfo(json){
+    
     //Calculate totalpoints (from subgoal individual Points)
     let totalPoints = 0;
+    //Button content
+    let button;
+
     json.subgoal.forEach(element => {
         totalPoints += element.Points
     })
+
     
+    if(arr.includes(json.goal.Id)){
+        button = `<a id="remove" class="button white_button following" href="#" onclick=addTrue(false)>Unfollow skill</a>`; 
+    }
+    else{
+        button = `<a id="add" class="button white_button" href="#" onclick=addTrue(true)>Follow skill</a>`; 
+    }
+    
+   
+        
+   
+
     let content = `
-        <a class="button white_button discord" href="https://discord.gg/8nKyetykZf" target="_blank">Join the discord</a>
-        <a class="button white_button" href="#" onclick=addGoalToUser()>Add goal</a>
+        <div id="button_wrapper">
+            <a class="button white_button discord" href="https://discord.gg/8nKyetykZf" target="_blank">Join the discord</a>
+            `+button+`
+        </div>
 
         <h2>`+json.goal.Name+`</h2>
         <h4>Points: 0 - `+totalPoints+`</h4>
@@ -54,8 +108,7 @@ function generateGoalInfo(json){
     json.subgoal.forEach(element => {
         //Foreach element create a div
         let divElement = `     
-        <div>
-            <img class="goal_thumb" src="assets/water2.jpg" alt="goal_thumb">
+        <div>   
             <a href="subgoal.html?id=`+element.Id+`"><span>`+element.Name+`</span></a>
         </div>
             `;
