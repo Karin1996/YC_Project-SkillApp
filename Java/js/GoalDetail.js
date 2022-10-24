@@ -48,17 +48,18 @@ function subRequest(json){
     fetch("http://localhost:8082/subGoal",
         { headers: {
                 'Content-Type': 'application/json'}, method: 'POST', body: json
-        })
+        }).then(a=>a.text()).then(d => addSubToGoal(d) )
+
 }
 
 
-// function addSubToGoal() {
-//     fetch(`http://localhost:8082/goals/${paramValue}/${?}`, {
-//         method: 'PUT'
-//     })
-// }
-//
-//
+function addSubToGoal(d) {
+    fetch(`http://localhost:8082/goals/${paramValue}/${d}`, {
+        method: 'PUT'
+    })
+}
+
+
 
 
 
