@@ -5,7 +5,7 @@ let nav_menu = `
 
     <menu>
         <li><a href="./profile.html"> <span>Dashboard</span> </a></li>
-        <li><a href="./addGoal.html"> <span>Add youre own skill</span> </a></li>
+        <li><a href="./addGoal.html"> <span>Add your own skill</span> </a></li>
     </menu>
 
     <menu>
