@@ -59,7 +59,7 @@ function updateJSON(){
 
 function serverRequestUpdate(json){
     console.log("in de functie serverRequest(json)");
-    fetch(`http://localhost:8082/users/update/${userId}/`,
+    fetch(`http://2209ycdoeleapp.mysql.database.azure.com/users/update/${userId}/`,
         {headers: {'Content-Type': 'application/json'}, method: 'PUT', body: json})
         .then((response) => response.json())
         .then((data) => console.log(data));

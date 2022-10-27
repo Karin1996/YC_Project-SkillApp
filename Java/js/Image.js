@@ -23,7 +23,7 @@
 
       function serverRequest(json){
     console.log("Wowzerts");
-    fetch("http://localhost:8082/image", { headers: {
+    fetch("http://2209ycdoeleapp.mysql.database.azure.com/image", { headers: {
 
             'Content-Type': 'application/json'}, method: 'POST', body: json})
         .then((response) => response.json())
@@ -44,7 +44,7 @@
 
 
   function loadImage() {
-        fetch(`http://localhost:8082/image/73`)
+        fetch(`http://2209ycdoeleapp.mysql.database.azure.com/image/73`)
   .then((response) => {console.log(response);
   return response.json();
   }).then(imgBlob => {console.log(imgBlob);
