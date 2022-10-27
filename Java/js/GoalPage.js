@@ -1,6 +1,6 @@
 function getAllGoals() {
 
-    fetch(`http://localhost:8082/goals`)
+    fetch(`http://2209ycdoeleapp.mysql.database.azure.com/goals`)
         .then((data)=>{
             return data.json();
         }).then((goals)=>{
@@ -35,7 +35,7 @@ function getAllGoals() {
 
 function loadImage(idImage) {
     console.log("dit is de id: " + idImage);
-    fetch(`http://localhost:8082/image/${imageId}`)
+    fetch(`http://2209ycdoeleapp.mysql.database.azure.com/image/${imageId}`)
 .then((response) => {console.log(response);
 return response.json();
 }).then(imgBlob => {console.log(imgBlob);

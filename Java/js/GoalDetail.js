@@ -7,7 +7,7 @@ console.log(paramValue)
 
 
 function haalGoalDetailOp() {
-    fetch(`http://localhost:8082/goals/id/${paramValue}`)
+    fetch(`http://2209ycdoeleapp.mysql.database.azure.com/goals/id/${paramValue}`)
         .then((data)=>{
             console.log(data);
             return data.json();
@@ -37,7 +37,7 @@ function haalGoalDetailOp() {
 
 
 function addGoalToDash() {
-    fetch(`http://localhost:8082/users/${idOfUser}/${paramValue}`, {
+    fetch(`http://2209ycdoeleapp.mysql.database.azure.com/users/${idOfUser}/${paramValue}`, {
         method: 'PUT'
     })
     location.href = "../Java/profile.html";
@@ -60,7 +60,7 @@ function addSub(){
 
 function subRequest(json){
     console.log("klopt dit?" + json);
-    fetch("http://localhost:8082/subGoal",
+    fetch("http://2209ycdoeleapp.mysql.database.azure.com/subGoal",
         { headers: {
                 'Content-Type': 'application/json'}, method: 'POST', body: json
         }).then(a=>a.text()).then(d => addSubToGoal(d) )
@@ -68,7 +68,7 @@ function subRequest(json){
 
 
 function addSubToGoal(d) {
-    fetch(`http://localhost:8082/goals/${paramValue}/${d}`, {
+    fetch(`http://2209ycdoeleapp.mysql.database.azure.com/goals/${paramValue}/${d}`, {
         method: 'PUT'
     })
 }
