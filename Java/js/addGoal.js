@@ -13,7 +13,7 @@ function addGoal(){
 
 function goalRequest(json){
     console.log(json);
-    fetch("http://2209ycdoeleapp.mysql.database.azure.com/goals",
+    fetch("https://javabackend.azurewebsites.net/goals",
         { headers: {
             'Content-Type': 'application/json'}, method: 'POST', body: json
         }).then(goToGoalPage)
@@ -43,7 +43,7 @@ function getBase64(file) {
   }
 
   function serverRequest(json) {
-    fetch("http://2209ycdoeleapp.mysql.database.azure.com/image",
+    fetch("https://javabackend.azurewebsites.net/image",
         { headers: {
         'Content-Type': 'application/json'}, method: 'POST', body: json
         })

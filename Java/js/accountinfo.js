@@ -2,7 +2,7 @@
 
 function getAccountInfo() {
 let userId = localStorage.getItem("keyId")
-    fetch(`http://http://2209ycdoeleapp.mysql.database.azure.com/users/id/${userId}`)
+    fetch(`https://javabackend.azurewebsites.net/users/id/${userId}`)
         .then((data)=>{
             console.log(data);
             return data.json();
@@ -59,7 +59,7 @@ function updateJSON(){
 
 function serverRequestUpdate(json){
     console.log("in de functie serverRequest(json)");
-    fetch(`http://2209ycdoeleapp.mysql.database.azure.com/users/update/${userId}/`,
+    fetch(`https://javabackend.azurewebsites.net/users/update/${userId}/`,
         {headers: {'Content-Type': 'application/json'}, method: 'PUT', body: json})
         .then((response) => response.json())
         .then((data) => console.log(data));
