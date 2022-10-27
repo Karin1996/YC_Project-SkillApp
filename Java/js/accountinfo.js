@@ -2,7 +2,7 @@
 
 function getAccountInfo() {
 let userId = localStorage.getItem("keyId")
-    fetch(`http://localhost:8082/users/id/${userId}`)
+    fetch(`http://http://2209ycdoeleapp.mysql.database.azure.com/users/id/${userId}`)
         .then((data)=>{
             console.log(data);
             return data.json();
