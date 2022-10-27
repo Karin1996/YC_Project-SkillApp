@@ -7,7 +7,7 @@ console.log(paramValue)
 
 
 function haalGoalDetailOp() {
-    fetch(`https://javabackend.azurewebsites.net/goals/id/${paramValue}`)
+    fetch(`http://javabackend.azurewebsites.net/goals/id/${paramValue}`)
         .then((data)=>{
             console.log(data);
             return data.json();
@@ -37,7 +37,7 @@ function haalGoalDetailOp() {
 
 
 function addGoalToDash() {
-    fetch(`https://javabackend.azurewebsites.net/users/${idOfUser}/${paramValue}`, {
+    fetch(`http://javabackend.azurewebsites.net/users/${idOfUser}/${paramValue}`, {
         method: 'PUT'
     })
     location.href = "../Java/profile.html";
@@ -60,7 +60,7 @@ function addSub(){
 
 function subRequest(json){
     console.log("klopt dit?" + json);
-    fetch("https://javabackend.azurewebsites.net/subGoal",
+    fetch("http://javabackend.azurewebsites.net/subGoal",
         { headers: {
                 'Content-Type': 'application/json'}, method: 'POST', body: json
         }).then(a=>a.text()).then(d => addSubToGoal(d) )
@@ -68,7 +68,7 @@ function subRequest(json){
 
 
 function addSubToGoal(d) {
-    fetch(`https://javabackend.azurewebsites.net/goals/${paramValue}/${d}`, {
+    fetch(`http://javabackend.azurewebsites.net/goals/${paramValue}/${d}`, {
         method: 'PUT'
     })
 }
