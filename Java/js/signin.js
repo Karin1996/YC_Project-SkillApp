@@ -3,7 +3,7 @@ function login() {
     let inputPassword = document.getElementById("password").value;
 
     console.log(inputUserName)
-    var url = `http://javabackend.azurewebsites.net/users/name/${inputUserName}`;
+    var url = `https://javabackend.azurewebsites.net/users/name/${inputUserName}`;
     console.log(url)
 
     fetch(url)
@@ -32,7 +32,7 @@ function skipLogin()
     {}
     else{
     var key = localStorage.getItem("keyId");
-    var url = `http://javabackend.azurewebsites.net/users/id/${key}`;
+    var url = `https://javabackend.azurewebsites.net/users/id/${key}`;
     fetch(url)
     .then((data)=>{
         console.log(data);
